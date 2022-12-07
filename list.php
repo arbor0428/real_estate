@@ -2,6 +2,15 @@
     include'filterMenu.php'
 ?>
 <?
+    include'view3.php'
+?>
+<?
+    include'view2.php'
+?>
+<?
+    include'view1.php'
+?>
+<?
     include'search.php'
 ?>
 
@@ -58,7 +67,7 @@
                                 </ul>
                             </div>
                             <div class="listImgWrap">
-                                <!--이미지-->
+                                <!--배경 이미지-->
                             </div>
                         </a>
                     </div>
@@ -92,7 +101,7 @@
                                 </ul>
                             </div>
                             <div class="listImgWrap">
-                                <!--이미지-->
+                                <!--배경 이미지-->
                             </div>
                         </a>
                     </div>
@@ -126,7 +135,7 @@
                                 </ul>
                             </div>
                             <div class="listImgWrap">
-                                <!--이미지-->
+                                <!--배경 이미지-->
                             </div>
                         </a>
                     </div>
@@ -159,7 +168,7 @@
                                 </ul>
                             </div>
                             <div class="listImgWrap">
-                                <!--이미지-->
+                                <!--배경 이미지-->
                             </div>
                         </a>
                     </div>
@@ -193,7 +202,7 @@
                                 </ul>
                             </div>
                             <div class="listImgWrap">
-                                <!--이미지-->
+                                <!--배경 이미지-->
                             </div>
                         </a>
                     </div>
@@ -227,7 +236,7 @@
                                 </ul>
                             </div>
                             <div class="listImgWrap">
-                                <!--이미지-->
+                                <!--배경 이미지-->
                             </div>
                         </a>
                     </div>
@@ -264,7 +273,7 @@
                                 </ul>
                             </div>
                             <div class="listImgWrap">
-                                <!--이미지-->
+                                <!--배경 이미지-->
                             </div>
                         </a>
                     </div>
@@ -298,44 +307,7 @@
                                 </ul>
                             </div>
                             <div class="listImgWrap">
-                                <!--이미지-->
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="tabCont">
-                <div class="listWrap">
-                    <div class="listBox">
-                        <a class="dp_sb dp_wrap" href="" title="">
-                            <div class="listText">
-                                <div class="listText_tit dp_f dp_c dp_wrap">
-                                    <p class="redCir f14 bold dp_f dp_c dp_cc">신</p>
-                                    <p class="tit_item f14 bold2">트레비앙</p>
-                                    <p class="f12 c_gry">서울 마포구 연남동 487-8</p>
-                                </div>
-                                <ul class="info_price">
-                                    <li class="dp_f dp_c">
-                                        <span class="badge badge_pink">매매</span>
-                                        <span class="ss_price dp_f dp_c f12 bold2">4억 3,000 ~ 8억 3,500</span>
-                                        <span class="c_type">R15</span>
-                                    </li>
-                                    <li class="dp_f dp_c">
-                                        <span class="badge badge_default">전세</span>
-
-                                    </li>
-                                    <li class="dp_f dp_c">
-                                        <span class="badge badge_default">월세</span>
-        
-                                    </li>
-                                    <li class="dp_f dp_c">
-                                        <span class="badge badge_default">투자</span>
-
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="listImgWrap">
-                                <!--이미지-->
+                                <!--배경 이미지-->
                             </div>
                         </a>
                     </div>
@@ -372,7 +344,44 @@
                                 </ul>
                             </div>
                             <div class="listImgWrap">
-                                <!--이미지-->
+                                <!--배경 이미지-->
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="tabCont">
+                <div class="listWrap">
+                    <div class="listBox">
+                        <a class="dp_sb dp_wrap" href="" title="">
+                            <div class="listText">
+                                <div class="listText_tit dp_f dp_c dp_wrap">
+                                    <p class="redCir f14 bold dp_f dp_c dp_cc">신</p>
+                                    <p class="tit_item f14 bold2">트레비앙</p>
+                                    <p class="f12 c_gry">서울 마포구 연남동 487-8</p>
+                                </div>
+                                <ul class="info_price">
+                                    <li class="dp_f dp_c">
+                                        <span class="badge badge_pink">매매</span>
+                                        <span class="ss_price dp_f dp_c f12 bold2">4억 3,000 ~ 8억 3,500</span>
+                                        <span class="c_type">R15</span>
+                                    </li>
+                                    <li class="dp_f dp_c">
+                                        <span class="badge badge_default">전세</span>
+
+                                    </li>
+                                    <li class="dp_f dp_c">
+                                        <span class="badge badge_default">월세</span>
+        
+                                    </li>
+                                    <li class="dp_f dp_c">
+                                        <span class="badge badge_default">투자</span>
+
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="listImgWrap">
+                                <!--배경 이미지-->
                             </div>
                         </a>
                     </div>
@@ -406,7 +415,7 @@
                                 </ul>
                             </div>
                             <div class="listImgWrap">
-                                <!--이미지-->
+                                <!--배경 이미지-->
                             </div>
                         </a>
                     </div>

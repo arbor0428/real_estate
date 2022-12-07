@@ -12,6 +12,16 @@
 		<link href="/css/main.css?v=1" rel="stylesheet" type="text/css">
 		<link href="/css/all.css?v=1" rel="stylesheet" type="text/css">
 		<link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+		<!-- slick 불러오기 -->
+		<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+		<!--<script src="/js/slick.min.js"></script>-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+		<link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+		
+		<script src="https://www.jqueryscript.net/demo/Highly-Customizable-Range-Slider-Plugin-For-Bootstrap-Bootstrap-Slider/dist/bootstrap-slider.js"></script>
+		<link href="https://www.jqueryscript.net/demo/Highly-Customizable-Range-Slider-Plugin-For-Bootstrap-Bootstrap-Slider/dist/css/bootstrap-slider.css" rel="stylesheet" type="text/css">
+
 	</head>
 
 	<body>
@@ -71,6 +81,7 @@
 					$(".searchBar .filterBtn").click(function(event){
 						event.preventDefault();
 						$(".filterMenu").show();
+						
 					});
 					//filter페이지 사라짐
 					$(".filterMenu .btn_close").click(function(event){
@@ -92,6 +103,32 @@
 
 							flag= true;
 						}
+					});
+					//view1페이지 나타남
+					$(".detailWrap .listWrap .listBox a ").click(function(event){
+						event.preventDefault();
+
+						$(".view1wrap").show();
+						$('.view1ImgSlick').slick('slickGoTo', 0); //탭클릭시 slick의 순서를 0번째부터 나오게
+						$('.view1ImgSlick').slick('setPosition'); //slick의 위치를 수동으로 새로 고쳐줌
+					});
+
+					//view2페이지 나타남
+					$(".view1wrap .listWrap .listBox").click(function(event){
+						event.preventDefault();
+
+						$(".view2wrap").show();
+						$('.view2ImgSlick').slick('slickGoTo', 0); //탭클릭시 slick의 순서를 0번째부터 나오게
+						$('.view2ImgSlick').slick('setPosition'); //slick의 위치를 수동으로 새로 고쳐줌
+					});
+
+					//view3페이지 나타남
+					$(".view1wrap .row_floor .item_ho").click(function(event){
+						event.preventDefault();
+
+						$(".view3wrap").show();
+						$('.view3ImgSlick').slick('slickGoTo', 0); //탭클릭시 slick의 순서를 0번째부터 나오게
+						$('.view3ImgSlick').slick('setPosition'); //slick의 위치를 수동으로 새로 고쳐줌
 					});
 				</script>
 

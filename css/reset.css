@@ -13,6 +13,7 @@ img{vertical-align: top;}
 *::-webkit-scrollbar{width:6px;height:6px;background-color:#e1e1e1} /* 스크롤 바 전체 너비 */
 *::-webkit-scrollbar-thumb {background-color: #888; border-radius: 3px;}
 
+.f10 {font-size:0.625rem;}
 .f12 {font-size:0.75rem;}
 .f14 {font-size:0.875rem;}
 .f15 {font-size:0.938rem;}
@@ -54,6 +55,7 @@ img{vertical-align: top;}
 .m-72 {margin-top: 72px;}
 .m-100 {margin-top: 100px;}
 
+.m_5 {margin-bottom: 5px !important;}
 .m_10 {margin-bottom: 10px !important;}
 .m_12 {margin-bottom: 12px;}
 .m_20 {margin-bottom: 20px;}
@@ -132,8 +134,25 @@ img{vertical-align: top;}
 
 .c_gry {color: #888;}
 .c_gry2 {color: #555;}
+.c_gry3 {color: #78909C;}
 .c_blk {color: #222;}
 .c_red {color: #ed164b;}
+.c_red2 {color: #EC407A;}
+.c_blue {color: #0089ff;}
+.c_blue2 {color: #82B1FF;}
+.c_wht {color: #fff;}
+.c_yellow {color: #FBC02E;}
+.c_grn {color: #8BC34A;}
+
+
+.yello {background-color: #FBC02E;}
+.blue {background-color: #82B1FF;}
+.grn {background-color: #8BC34A;}
+.red {background-color: #EC407A;}
+.red2 {background-color: #ed164b;}
+.gry {background-color: #78909C;}
+
+.br_bottom {border-bottom: 6px solid #eee;}
 
 .btn_basic {    
     border-radius: 6px;
@@ -147,7 +166,54 @@ img{vertical-align: top;}
     background-color: #ed164b;
     color: #fff;
 }
-
+.table_wrap table {
+    width: 100%;
+    table-layout: fixed;
+}
+.table_wrap table thead th,
+.table_wrap table tbody td {
+    padding: 6px 0;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    letter-spacing: -.02em;
+    font-size: 0.75rem;
+    color: #555;
+}
+.table_wrap table thead th {
+    background-color: #fbfbfb;
+}
+.badge_LightningYellow{background-color:#FBC02E;color:#fff}
+.badge_Malibu{background-color:#82B1FF;color:#fff}
+.badge_Sushi{background-color:#8BC34A;color:#fff}
+.badge_FrenchRose{background-color:#EC407A;color:#fff}
+.badge_RegentGray{background-color:#78909C;color:#fff}
+.badge_BurningOrange{background-color:#FF7043;color:#fff}
+.badge_SanMarino{background-color:#3F51B4;color:#fff}
+.badge_RomanCoffee{background-color:#795548;color:#fff}
+.badge_Apple{background-color:#388E3B;color:#fff}
+.badge_Seance{background-color:#8E24AA;color:#fff}
+.badge_RobinsEggBlue{background-color:#00BCD4;color:#fff}
+.badge_MineShaft{background-color:#2E2E2E;color:#fff}
+.badge_DaisyBush{background-color:#512DA8;color:#fff}
+.badge_OrangePeel{background-color:#FFA000;color:#fff}
+.badge_WaikawaGray{background-color:#59698D;color:#fff}
+.badge_RoseBudCherry{background-color:#880E4F;color:#fff}
+.badge_ClayCreek{background-color:#8D8459;color:#fff}
+.badge_Niagara{background-color:#09B082;color:#fff}
+.badge_PastelPink{background-color:#FFCBDD;color:#fff}
+.badge_Asparagus{background-color:#798850;color:#fff}
+.badge_WellRead{background-color:#A62E2E;color:#fff}
+.badge_BlueGem{background-color:#3209B0;color:#fff}
+.badge_ElectricViolet{background-color:#C612CB;color:#fff}
+.badge_AmethystSmoke{background-color:#B19DB5;color:#fff}
+.badge_CaribbeanGreen{background-color:#01ECAB;color:#fff}
+.badge_MediumPurple{background-color:#7D60D8;color:#fff}
+.badge_BlueLagoon{background-color:#038095;color:#fff}
+.badge_Bittersweet{background-color:#FF6464;color:#fff}
+.badge_DustyGray{background-color:#959595;color:#fff}
+.badge_Heliotrope{background-color:#E888FF;color:#fff}
+.badge_none{color:#888;border:1px solid #e1e1e1;box-sizing:border-box}
 
 
 
