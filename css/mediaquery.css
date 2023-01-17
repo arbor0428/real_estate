@@ -1,0 +1,32 @@
+@media (max-width: 898px) {
+    .leftBox {left: -281px; z-index: 30; transition: all 0.3s;}
+    .m_left_close_btn {display: block; position: absolute; padding: 30px 8px; background-color: #fff; cursor: pointer; top: 14%; right: -41px;}
+    .m_left_close_btn .lnr {font-size: 24px; font-weight: 700; color: #555;}
+    .m_left_close_btn .lnr-chevron-left {display: none;} 
+    .m_left_close_btn.on .lnr-chevron-right {display: none;}
+    .m_left_close_btn.on .lnr-chevron-left {display: block;}
+    .m_left_close_btn:hover {background-color:#ed164b;}
+    .m_left_close_btn.on {background-color:#ed164b;}
+    .m_left_close_btn.on .lnr {color:#fff;}
+    .m_left_close_btn:hover .lnr {color:#fff;}
+    .map_search {left: 0; z-index: 40;}
+    .map_set_btn_wrap {top: 98px; right: 21px;}
+}
+
+
+@media (max-width: 532px) {
+    html, body {font-size: 14px;}
+    .map_search {width: 100%;}
+    .searchBarWrap {padding: 4px;}
+    .searchBar select {padding: 0;}
+    .searchBar .inputWrap {width: 60%;}
+    .filterMenu .btn_close {right: 20px; z-index: 99;}
+    .filterMenu .inner_filter .row {display: block;}
+    .filterMenu .inner_filter .row .row_det {width: 100%; margin-top: 20px;}
+    .area_status {padding: 10px 5px;}
+    .listWrap .listBox .listText {width: 52%;}
+    .listImgWrap {max-width: 45%;}
+    .info_price li .ss_price {width: 115px;}
+    .listImgWrap02 {max-width: 45%;}
+
+}

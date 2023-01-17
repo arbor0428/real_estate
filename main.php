@@ -11,6 +11,7 @@
 		<link rel="stylesheet" type="text/css" href="/css/reset.css?v=1">
 		<link href="/css/main.css?v=1" rel="stylesheet" type="text/css">
 		<link href="/css/all.css?v=1" rel="stylesheet" type="text/css">
+		<link href="/css/mediaquery.css?v=1" rel="stylesheet" type="text/css">
 		<link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 		<!-- slick 불러오기 -->
 		<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
@@ -32,7 +33,11 @@
 
 
 		<div style='display:flex;width:100%;height:100%;'>
-			<div style='width:280px;height:100%;background:#ffffff;position:fixed;left:0px;top:0;z-index:100;transition:all 1s;border-right:1px solid #ed164b;' class='leftBox'>
+			<div class='leftBox'>
+				<div class="m_left_close_btn">
+					<span class="lnr lnr-chevron-right"></span>
+					<span class="lnr lnr-chevron-left"></span>
+				</div>
 				<h1 class="logo" style='text-align:center;'><img src="/images/logo.png" style='width:100px;'></h1>
 				
 				<div class="gnb_menu_area">
@@ -77,6 +82,22 @@
 				</div>
 				
 				<script>
+					var flag02 = true;
+					$(".leftBox .m_left_close_btn").click(function(event){
+						event.preventDefault();
+						if(flag02){
+							$(".leftBox").css({"left":"0","z-index":"45"});
+							$(this).addClass("on");
+
+							flag02= false;
+						} else {
+							$(".leftBox").css({"left":"-281px","z-index":"30"});
+							$(this).removeClass("on");
+
+							flag02= true;
+						}
+						
+					});
 					//filter페이지 나타남
 					$(".searchBar .filterBtn").click(function(event){
 						event.preventDefault();
@@ -137,7 +158,7 @@
 
 				<!-- * 카카오맵 - 지도퍼가기 -->
 				<!-- 1. 지도 노드 -->
-				<div id="daumRoughmapContainer1665708674585" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+				<div id="daumRoughmapContainer1665708674585" class="root_daum_roughmap root_daum_roughmap_landing" style="width: 100%; height: 100vh !important;"></div>
 
 				<!--
 					2. 설치 스크립트
@@ -150,8 +171,8 @@
 					new daum.roughmap.Lander({
 						"timestamp" : "1665708674585",
 						"key" : "2c2a6",
-						"mapWidth" : "1920",
-						"mapHeight" : "950"
+						"mapWidth" : "auto",
+						"mapHeight" : "auto"
 					}).render();
 				</script>
 			</div>
