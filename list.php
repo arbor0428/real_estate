@@ -1,3 +1,4 @@
+
 <?
     include'filterMenu.php'
 ?>
@@ -12,6 +13,9 @@
 ?>
 <?
     include'search.php'
+?>
+<?
+    include'board.php'
 ?>
 
 <div class="detailWrap">

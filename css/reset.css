@@ -117,10 +117,12 @@ img{vertical-align: top;}
 .dp_end {align-items: flex-end;}
 .dp_end02 {justify-content: flex-end;}
 .dp_fc {flex-direction: column;}
+.dp_inline {display: inline-flex; display: -ms-inline-flexbox; display: -webkit-inline-flex;}
 
 .dp_ib{display:inline-block;}
 .dp_b {display:block;}
 .p_r {position:relative;}
+.p_a {position:absolute;}
 .v_m {vertical-align:middle;}
 
 .po_r {position:relative;}
@@ -146,8 +148,10 @@ img{vertical-align: top;}
 
 
 .yello {background-color: #FBC02E;}
+.yello02 {background-color: #fee500;}
 .blue {background-color: #82B1FF;}
 .grn {background-color: #8BC34A;}
+.grn02 {background-color: #19ce60;}
 .red {background-color: #EC407A;}
 .red2 {background-color: #ed164b;}
 .gry {background-color: #78909C;}
@@ -183,6 +187,8 @@ img{vertical-align: top;}
 .table_wrap table thead th {
     background-color: #fbfbfb;
 }
+
+.ellipsis {white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
 .badge_LightningYellow{background-color:#FBC02E;color:#fff}
 .badge_Malibu{background-color:#82B1FF;color:#fff}
 .badge_Sushi{background-color:#8BC34A;color:#fff}

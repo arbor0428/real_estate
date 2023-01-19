@@ -9,9 +9,9 @@
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 
 		<link rel="stylesheet" type="text/css" href="/css/reset.css?v=1">
-		<link href="/css/main.css?v=1" rel="stylesheet" type="text/css">
+		<link href="/css/main.css?v=2" rel="stylesheet" type="text/css">
 		<link href="/css/all.css?v=1" rel="stylesheet" type="text/css">
-		<link href="/css/mediaquery.css?v=1" rel="stylesheet" type="text/css">
+		<link href="/css/mediaquery.css?v=2" rel="stylesheet" type="text/css">
 		<link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 		<!-- slick 불러오기 -->
 		<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
@@ -98,15 +98,34 @@
 						}
 						
 					});
+					//일반 게시판 화면 나타남
+					$(".gnb_menu li:nth-child(5) a").click(function(event){
+
+						event.preventDefault();
+
+						$(".board_tbl").show();
+						
+					});
+					//일반 게시판 화면 사라짐
+					$(".board_tbl .btn_close").click(function(event){
+
+						event.preventDefault();
+
+						$(".board_tbl").hide();
+					});
 					//filter페이지 나타남
 					$(".searchBar .filterBtn").click(function(event){
+
 						event.preventDefault();
+
 						$(".filterMenu").show();
 						
 					});
 					//filter페이지 사라짐
 					$(".filterMenu .btn_close").click(function(event){
+
 						event.preventDefault();
+
 						$(".filterMenu").hide();
 					});
 					//list페이지 나타남
@@ -127,6 +146,7 @@
 					});
 					//view1페이지 나타남
 					$(".detailWrap .listWrap .listBox a ").click(function(event){
+
 						event.preventDefault();
 
 						$(".view1wrap").show();
@@ -136,6 +156,7 @@
 
 					//view2페이지 나타남
 					$(".view1wrap .listWrap .listBox").click(function(event){
+
 						event.preventDefault();
 
 						$(".view2wrap").show();
@@ -145,6 +166,7 @@
 
 					//view3페이지 나타남
 					$(".view1wrap .row_floor .item_ho").click(function(event){
+
 						event.preventDefault();
 
 						$(".view3wrap").show();

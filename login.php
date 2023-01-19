@@ -59,7 +59,7 @@
 										</div>
 									
                                         <hr>
-                                        <a href="" class="btn btn-facebook btn-user btn-block" style='width:50%;float:left;'>
+                                        <a href="./join1.php" class="btn btn-facebook btn-user btn-block" style='width:50%;float:left;'>
                                             <i class="fab fa-facebook-f fa-fw"></i>회원가입
                                         </a>
                                         <a href="" class="btn btn-facebook btn-user btn-block" style='width:50px;float:left;margin:0;margin-left:5px;background:#15c654;'>
