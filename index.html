@@ -1,0 +1,2858 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>집PRO</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="./css/reset.css?v=1">
+    <link href="./css/main.css?v=2" rel="stylesheet" type="text/css">
+    <link href="./css/all.css?v=1" rel="stylesheet" type="text/css">
+    <link href="./css/mediaquery.css?v=2" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <!-- slick 불러오기 -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!--<script src="/js/slick.min.js"></script>-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    
+    <script src="https://www.jqueryscript.net/demo/Highly-Customizable-Range-Slider-Plugin-For-Bootstrap-Bootstrap-Slider/dist/bootstrap-slider.js"></script>
+    <link href="https://www.jqueryscript.net/demo/Highly-Customizable-Range-Slider-Plugin-For-Bootstrap-Bootstrap-Slider/dist/css/bootstrap-slider.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+    <div class="map_set_btn_wrap">
+        <div style='width:35px;height:35px;background:url(/images/b1.jpg);border:1px solid #f5f7f7;box-sizing:border-box;cursor:pointer;' class='obtn'></div>
+        
+        <div style='width:35px;height:70px;background:url(/images/b2.jpg);border:1px solid #f5f7f7;box-sizing:border-box;margin-top:5px;'></div>
+        <div style='width:35px;height:35px;background:url(/images/b3.jpg);border:1px solid #f5f7f7;box-sizing:border-box;margin-top:5px;'></div>
+        <div style='width:35px;height:35px;background:url(/images/b4.jpg);border:1px solid #f5f7f7;box-sizing:border-box;margin-top:5px;'></div>
+        <div style='width:35px;height:35px;background:url(/images/b5.jpg);border:1px solid #f5f7f7;box-sizing:border-box;margin-top:5px;'></div>
+        <div style='width:35px;height:35px;background:url(/images/b6.jpg);border:1px solid #f5f7f7;box-sizing:border-box;margin-top:5px;'></div>
+    </div>
+
+    <div style='display:flex;width:100%;height:100%;'>
+        <div class='leftBox'>
+            <div class="m_left_close_btn">
+                <span class="lnr lnr-chevron-right"></span>
+                <span class="lnr lnr-chevron-left"></span>
+            </div>
+            <h1 class="logo" style='text-align:center;'><img src="/images/logo.png" style='width:100px;'></h1>
+            
+            <div class="gnb_menu_area">
+                <div>
+                    <div style='font-size:24px;'><i class="fas fa-user-circle" style='color:#d1d3e2'></i> <b>홍길동</b>님</div>
+                    <div class='coupon'>
+                        이용권이 없습니다.<br>
+                        상품을 구매해주세요.
+                    </div>
+                </div>
+                <ul class="gnb_menu">
+                    <li><a href="#">홈으로</a></li>
+                    <li><a href="#">현장관리</a></li>
+                    <li><a href="#">마이페이지</a></li>
+                    <li><a href="#">회원관리</a></li>
+                    <li><a href="#">고객센터</a></li>
+                </ul>
+            </div>
+            <div class="footer_area">
+                <div class="footer_menu">
+                    <ul>
+                        <li><b><a>개인정보처리방침</a></b></li>
+                        <li><a>이용약관</a></li>
+                        <li><a>위치기반서비스 이용약관</a></li>
+                        <li><a>매물관리정책</a></li>
+                        <li><a href="#">사업자 정보</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- <img src='x.png' style='position:absolute;top:0;right:-48px;cursor:pointer;' class='close'> -->
+        </div>
+        <div style='width:100%;height:100%;overflow:hidden;position:relative;'>
+
+
+            <div style='width:100%;height:100%;position:absolute;top:0;left:0;z-index:10;' class='bgbgbg'></div>
+
+            <div class="map_search">
+                <!--집프로 참고 코딩-->
+
+                <!---filtermenu--->
+                <div class="filterMenu">
+                    <div class="btn_close">
+                        <img src="../images/btn_close.png" alt="">
+                    </div>
+                    <div class="inner_filter">
+                        <p class="c_gry2 bold2 m_20">필터검색</p>
+                        <div class="row dp_f">
+                            <div class="row_tit">건물형태</div>
+                            <div class="row_det">
+                                <ul class="checkWrap dp_f dp_wrap">
+                                    <li>
+                                        <input type="checkbox" name="chkall01" id="chkall01" checked>
+                                        <label for="chkall01">전체</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="chk01_01" id="chk01_01">
+                                        <label for="chk01_01">다세대/연립</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="chk01_02" id="chk01_02">
+                                        <label for="chk01_02">다가구</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="chk01_03" id="chk01_03">
+                                        <label for="chk01_03">오피스텔</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="chk01_04" id="chk01_04">
+                                        <label for="chk01_04">아파트</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="chk01_05" id="chk01_05">
+                                        <label for="chk01_05">단독주택</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="chk01_06" id="chk01_06">
+                                        <label for="chk01_06">타운하우스</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="chk01_07" id="chk01_07">
+                                        <label for="chk01_07">도생</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="chk01_08" id="chk01_08">
+                                        <label for="chk01_08">근생</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="chk01_09" id="chk01_09">
+                                        <label for="chk01_09">숙박</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row dp_f">
+                            <div class="row_tit">계약분류</div>
+                            <div class="row_det">
+                                <ul class="checkWrap dp_f dp_wrap">
+                                    <li>
+                                        <input type="checkbox" name="chkall02" id="chkall02" checked>
+                                        <label for="chkall02">전체</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="chk02_01" id="chk02_01">
+                                        <label for="chk02_01">매매</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="chk02_02" id="chk02_02">
+                                        <label for="chk02_02">전세</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="chk02_03" id="chk02_03">
+                                        <label for="chk02_03">안심</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="chk02_04" id="chk02_04">
+                                        <label for="chk02_04">중기청</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="chk02_05" id="chk02_05">
+                                        <label for="chk02_05">월세</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="chk02_06" id="chk02_06">
+                                        <label for="chk02_06">대물</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row dp_f dp_c">
+                            <div class="row_tit"> 
+                                R 
+                                <div class="c_red f12 dp_f">
+                                    <input class="numCount" id="info01" name="info01" type="text" onkeyup="set01();" value='0.1'>
+                                    <span>이상 ~</span>
+                                    <input class="numCount" id="info02" name="info02" type="text" onkeyup="set01();" value='10'>
+                                    <span>이하</span>
+                                </div>
+                            </div>
+                            <div class="row_det">
+                                <div class="slider-cont">
+                                    <input id="ex12c" type="text"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row dp_f">
+                            <div class="row_tit"> 
+                                매매가
+                                <div class="c_red f12 dp_f">
+                                    <input class="numCount" id="info03" name="info03" type="text" onkeyup="set02();" value='0.1'>
+                                    <span>이상 ~</span>
+                                    <input class="numCount" id="info04" name="info04" type="text" onkeyup="set02();" value='10'>
+                                    <span>이하</span>
+                                </div>
+                            </div>
+                            <div class="row_det">
+                                <div class="slider-cont">
+                                    <input id="ex12c02" type="text"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row dp_f">
+                            <div class="row_tit"> 
+                                담보실입
+                                <div class="c_red f12 dp_f">
+                                    <input class="numCount" id="info05" name="info05" type="text" onkeyup="set03();" value='0.1'>
+                                    <span>이상 ~</span>
+                                    <input class="numCount" id="info06" name="info06" type="text" onkeyup="set03();" value='10'>
+                                    <span>이하</span>
+                                </div>
+                            </div>
+                            <div class="row_det">
+                                <div class="slider-cont">
+                                    <input id="ex12c03" type="text"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row dp_f">
+                            <div class="row_tit">무입여부</div>
+                            <div class="row_det">
+                                <ul class="checkWrap dp_f dp_wrap list_radio1">
+                                    <li>
+                                        <input type="checkbox" name="chk03_01" id="chk03_01">
+                                        <label for="chk03_01">가능</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row dp_f">
+                            <div class="row_tit"> 
+                                전세가/보증금
+                                <div class="c_red f12 dp_f">
+                                    <input class="numCount" id="info07" name="info07" type="text" onkeyup="set04();" value='0.1'>
+                                    <span>이상 ~</span>
+                                    <input class="numCount" id="info08" name="info08" type="text" onkeyup="set04();" value='10'>
+                                    <span>이하</span>
+                                </div>
+                            </div>
+                            <div class="row_det">
+                                <div class="slider-cont">
+                                    <input id="ex12c04" type="text"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row dp_f">
+                            <div class="row_tit"> 
+                                월세
+                                <div class="c_red f12 dp_f">
+                                    <input class="numCount" id="info09" name="info09" type="text" onkeyup="set05();" value='0.1'>
+                                    <span>이상 ~</span>
+                                    <input class="numCount" id="info10" name="info10" type="text" onkeyup="set05();" value='10'>
+                                    <span>이하</span>
+                                </div>
+                            </div>
+                            <div class="row_det">
+                                <div class="slider-cont">
+                                    <input id="ex12c05" type="text"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row dp_f">
+                            <div class="row_tit"> 
+                                실평수 
+                                <div class="c_red f12 dp_f">
+                                    <input class="numCount" id="info11" name="info11" type="text" onkeyup="set06();" value='0.1'>
+                                    <span>이상 ~</span>
+                                    <input class="numCount" id="info12" name="info12" type="text" onkeyup="set06();" value='10'>
+                                    <span>이하</span>
+                                </div>
+                            </div>
+                            <div class="row_det">
+                                <div class="slider-cont">
+                                    <input id="ex12c06" type="text"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row dp_f">
+                            <div class="row_tit">방</div>
+                            <div class="row_det">
+                                <ul class="checkWrap dp_f dp_wrap">
+                                    <li>
+                                        <input type="checkbox" name="chkall04" id="chkall04" checked>
+                                        <label for="chkall04">전체</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="chk04_01" id="chk04_01">
+                                        <label for="chk04_01">원룸</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="chk04_02" id="chk04_02">
+                                        <label for="chk04_02">1.5룸</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="chk04_03" id="chk04_03">
+                                        <label for="chk04_03">투룸</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="chk04_04" id="chk04_04">
+                                        <label for="chk04_04">쓰리룸</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="chk04_05" id="chk04_05">
+                                        <label for="chk04_05">4룸이상</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row dp_f">
+                            <div class="row_tit">화장실</div>
+                            <div class="row_det">
+                                <ul class="checkWrap dp_f dp_wrap">
+                                    <li>
+                                        <input type="checkbox" name="chkall05" id="chkall05" checked>
+                                        <label for="chkall05">전체</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="chk05_01" id="chk05_01">
+                                        <label for="chk05_01">1개</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="chk05_02" id="chk05_02">
+                                        <label for="chk05_02">2개</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="chk05_03" id="chk05_03">
+                                        <label for="chk05_03">3개</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="chk05_04" id="chk05_04">
+                                        <label for="chk05_04">4개이상</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row dp_f">
+                            <div class="row_tit">복층</div>
+                            <div class="row_det">
+                                <ul class="checkWrap dp_f dp_wrap list_radio2">
+                                    <li>
+                                        <input type="checkbox" name="chk06_01" id="chk06_01">
+                                        <label for="chk06_01">복층</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="chk06_02" id="chk06_02">
+                                        <label for="chk06_02">복층아님</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row dp_f">
+                            <div class="row_tit">복층</div>
+                            <div class="row_det">
+                                <ul class="checkWrap dp_f dp_wrap">
+                                    <li>
+                                        <input type="checkbox" name="chkall07" id="chkall07" checked>
+                                        <label for="chkall07">전체</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="chk07_01" id="chk07_01">
+                                        <label for="chk07_01">테라스</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="chk07_02" id="chk07_02">
+                                        <label for="chk07_02">왕테라스</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="chk07_03" id="chk07_03">
+                                        <label for="chk07_03">없음</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row dp_f">
+                            <div class="row_tit">엘리베이터</div>
+                            <div class="row_det">
+                                <ul class="checkWrap dp_f dp_wrap list_radio2">
+                                    <li>
+                                        <input type="checkbox" name="chk08_01" id="chk08_01">
+                                        <label for="chk08_01">있음</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="chk08_02" id="chk08_02">
+                                        <label for="chk08_02">없음</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row dp_f">
+                            <div class="row_tit">주차방식</div>
+                            <div class="row_det">
+                                <ul class="checkWrap dp_f dp_wrap">
+                                    <li>
+                                        <input type="checkbox" name="chk09_01" id="chk09_01">
+                                        <label for="chk09_01">자주식/병렬</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="chk09_02" id="chk09_02">
+                                        <label for="chk09_02">지하주차장</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="chk09_03" id="chk09_03">
+                                        <label for="chk09_03">벙커주차장</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row dp_f">
+                            <div class="row_tit">주택방향</div>
+                            <div class="row_det">
+                                <ul class="checkWrap dp_f dp_wrap">
+                                    <li>
+                                        <input type="checkbox" name="chkall10" id="chkall10" checked>
+                                        <label for="chkall10">전체</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="chk10_01" id="chk10_01">
+                                        <label for="chk10_01">동향</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="chk10_02" id="chk10_02">
+                                        <label for="chk10_02">서향</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="chk10_03" id="chk10_03">
+                                        <label for="chk10_03">남향</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="chk10_04" id="chk10_04">
+                                        <label for="chk10_04">북향</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="chk10_05" id="chk10_05">
+                                        <label for="chk10_05">남동향</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="chk10_06" id="chk10_06">
+                                        <label for="chk10_06">남서향</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="chk10_07" id="chk10_07">
+                                        <label for="chk10_07">북동향</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="chk10_08" id="chk10_08">
+                                        <label for="chk10_08">북서향</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row dp_f">
+                            <div class="row_tit">바닥형태</div>
+                            <div class="row_det">
+                                <ul class="checkWrap dp_f dp_wrap">
+                                    <li>
+                                        <input type="checkbox" name="chkall11" id="chkall11" checked>
+                                        <label for="chkall11">전체</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="chk11_01" id="chk11_01">
+                                        <label for="chk11_01">마루</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="chk11_02" id="chk11_02">
+                                        <label for="chk11_02">타일</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="chk11_03" id="chk11_03">
+                                        <label for="chk11_03">장판</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row dp_f">
+                            <div class="row_tit">세대옵션</div>
+                            <div class="row_det">
+                                <ul class="checkWrap dp_f dp_wrap">
+                                    <li>
+                                        <input type="checkbox" name="chkall12" id="chkall12" checked>
+                                        <label for="chkall12">에어컨</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="chk12_01" id="chk12_01">
+                                        <label for="chk12_01">냉장고</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="chk12_02" id="chk12_02">
+                                        <label for="chk12_02">세탁기</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="chk12_03" id="chk12_03">
+                                        <label for="chk12_03">세탁기<br>(건조기능)</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="chk12_03" id="chk12_03">
+                                        <label for="chk12_03">욕조</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="chk12_04" id="chk12_04">
+                                        <label for="chk12_04">마당</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row dp_f">
+                            <div class="row_tit">준공년월</div>
+                            <div class="row_det">
+                                
+                            </div>
+                        </div>
+                
+                        <div class="row dp_f">
+                            <div class="row_tit">소유권</div>
+                            <div class="row_det">
+                                <ul class="checkWrap dp_f dp_wrap">
+                                    <li>
+                                        <input type="checkbox" name="chkall13" id="chkall13" checked>
+                                        <label for="chkall13">전체</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="chk13_01" id="chk13_01">
+                                        <label for="chk13_01">개인</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="chk13_02" id="chk13_02">
+                                        <label for="chk13_02">법인</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="chk14_03" id="chk14_03">
+                                        <label for="chk14_03">신탁</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                
+                        <div class="row dp_f">
+                            <div class="row_tit">공실</div>
+                            <div class="row_det">
+                                <ul class="checkWrap dp_f dp_wrap list_radio1">
+                                    <li>
+                                        <input type="checkbox" name="chkall14" id="chkall14" checked>
+                                        <label for="chkall14">공실만</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row dp_f">
+                            <div class="row_tit">즉시입주</div>
+                            <div class="row_det">
+                                <ul class="checkWrap dp_f dp_wrap list_radio1">
+                                    <li>
+                                        <input type="checkbox" name="chkall15" id="chkall15" checked>
+                                        <label for="chkall15">즉시입주</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group_btn dp_sb">
+                        <a class="btn_basic dp_f dp_c dp_cc f14 bold2" href="" title="취소">취소</a>
+                        <a class="btn_basic dp_f dp_c dp_cc f14 bold2" href="" title="초기화">초기화</a>
+                        <a class="red_btn dp_f dp_c dp_cc f14 bold2" href="" title="적용하기">적용하기</a>
+                    </div>
+                </div>
+                <style>
+                    .slider .tooltip.top {display: none;}
+                    .slider-handle{
+                        background: #ffffff;
+                        border:1px solid #efefef;
+                        box-sizing:border-box;
+                    }
+                    .slider-selection {
+                        background-color: #ed164b;
+                        box-shadow: none;
+                        background-image: url();
+                    }
+                    .slider.slider-horizontal {
+                        width: 100%;
+                    }
+                    .slider-track {
+                        box-shadow: none;
+                    }
+                    .slider.slider-horizontal .slider-track {
+                        height: 4px;
+                    }
+                    .slider.slider-horizontal .slider-tick, 
+                    .slider.slider-horizontal .slider-handle {
+                        margin-top: -8px;
+                    }
+                    .slider-track {
+                        background-color: #e4e7ed;
+                        background-image: url();
+                    }
+                </style>
+                <script>
+                    set01()
+                    function set01(){
+                        a = parseFloat($("#info01").val())
+                        b = parseFloat($("#info02").val())
+                        $("#ex12c").slider({ id: "slider12c", min: a, max: b, range: true, step:0.1, value: [a, b] });
+                        $("#ex12c").on("slide", function(slideEvt) {
+                            $("#in3SliderVal01").text(slideEvt.value[0]);
+                            $("#ex3SliderVal01").text(slideEvt.value[1]);
+                            $("#info01").val(slideEvt.value[0]);
+                            $("#info02").val(slideEvt.value[1]);
+                        });
+                
+                    }
+                    set02()
+                    function set02(){
+                        a = parseFloat($("#info03").val())
+                        b = parseFloat($("#info04").val())
+                        $("#ex12c02").slider({ id: "slider12c02", min: a, max: b, range: true, step:0.1, value: [a, b] });
+                        $("#ex12c02").on("slide", function(slideEvt) {
+                            $("#in3SliderVal02").text(slideEvt.value[0]);
+                            $("#ex3SliderVal02").text(slideEvt.value[1]);
+                            $("#info03").val(slideEvt.value[0]);
+                            $("#info04").val(slideEvt.value[1]);
+                        });
+                    }
+                
+                    set03()
+                    function set03(){
+                        a = parseFloat($("#info05").val())
+                        b = parseFloat($("#info06").val())
+                        $("#ex12c03").slider({ id: "slider12c03", min: a, max: b, range: true, step:0.1, value: [a, b] });
+                        $("#ex12c03").on("slide", function(slideEvt) {
+                            $("#in3SliderVal03").text(slideEvt.value[0]);
+                            $("#ex3SliderVal03").text(slideEvt.value[1]);
+                            $("#info05").val(slideEvt.value[0]);
+                            $("#info06").val(slideEvt.value[1]);
+                        });
+                    }
+                
+                    set04()
+                    function set04(){
+                        a = parseFloat($("#info07").val())
+                        b = parseFloat($("#info08").val())
+                        $("#ex12c04").slider({ id: "slider12c04", min: a, max: b, range: true, step:0.1, value: [a, b] });
+                        $("#ex12c04").on("slide", function(slideEvt) {
+                            $("#in3SliderVal04").text(slideEvt.value[0]);
+                            $("#ex3SliderVal04").text(slideEvt.value[1]);
+                            $("#info07").val(slideEvt.value[0]);
+                            $("#info08").val(slideEvt.value[1]);
+                        });
+                    }
+                
+                    set05()
+                    function set05(){
+                        a = parseFloat($("#info09").val())
+                        b = parseFloat($("#info10").val())
+                        $("#ex12c05").slider({ id: "slider12c05", min: a, max: b, range: true, step:0.1, value: [a, b] });
+                        $("#ex12c05").on("slide", function(slideEvt) {
+                            $("#in3SliderVal05").text(slideEvt.value[0]);
+                            $("#ex3SliderVal05").text(slideEvt.value[1]);
+                            $("#info09").val(slideEvt.value[0]);
+                            $("#info10").val(slideEvt.value[1]);
+                        });
+                    }
+                
+                    set06()
+                    function set06(){
+                        a = parseFloat($("#info11").val())
+                        b = parseFloat($("#info12").val())
+                        $("#ex12c06").slider({ id: "slider12c06", min: a, max: b, range: true, step:0.1, value: [a, b] });
+                        $("#ex12c06").on("slide", function(slideEvt) {
+                            $("#in3SliderVal06").text(slideEvt.value[0]);
+                            $("#ex3SliderVal06").text(slideEvt.value[1]);
+                            $("#info11").val(slideEvt.value[0]);
+                            $("#info12").val(slideEvt.value[1]);
+                        });
+                    }
+                </script>
+
+                <div class="view3wrap">
+                    <div class="viewTop dp_sb dp_c">
+                        <div class="gobackBtn dp_f dp_c">
+                            <span class="lnr lnr-chevron-left"></span>
+                        </div>
+                        <div class="centerTit">
+                            <div class="dp_f dp_c dp_cc">
+                                <span class="redTitCir dp_f dp_c dp_cc">신</span>
+                                <span class="gryAptNm">트레비앙</span>
+                            </div>
+                            <p class="smallAdrGry">서울 마포구 연남동 487-8</p>
+                        </div>
+                        <div class="likeBtn">
+                            <!--별-->
+                        </div>
+                    </div>
+                    <div class="inner_filter02">
+                        <div class="view3Visual po_r">
+                            <div class="view3ImgSlick">
+                                <div class="view3ImgBox">
+                                    <img src="../images/view01/view1_img01.JPG" alt="">
+                                </div>
+                                <div class="view3ImgBox">
+                                    <img src="../images/view01/view1_img01.JPG" alt="">
+                                </div>
+                                <div class="view3ImgBox">
+                                    <img src="../images/view01/view1_img01.JPG" alt="">
+                                </div>
+                            </div>
+                            <div class="pagingInfo04"></div>
+                        </div>
+                        <script>
+                            var $status04 = $('.pagingInfo04');
+                            var $slickElement04 = $('.view3ImgSlick');
+
+                            $slickElement04.on('init reInit afterChange', function(event, slick, currentSlide, nextSlide){
+                                //currentSlide is undefined on init -- set it to 0 in this case (currentSlide is 0 based)
+                                var i = (currentSlide ? currentSlide : 0) + 1;
+                                $status04.text(i + ' / ' + slick.slideCount);
+                            });
+
+
+                            $slickElement04.slick({ 
+                                infinite : true, 
+                                autoplay : true,			// 자동 스크롤 사용 여부
+                                autoplaySpeed : 3000, 		// 자동 스크롤 시 다음으로 넘어가는데 걸리는 시간 (ms)
+                                speed: 500,
+                                arrows : true,
+                                fade: false
+                            });
+                        </script>
+                        <div class="dateWrap txt-r br_bottom area_status">
+                            <p class="m_5 c_blue bold">수정일시 <span>2022-01-20 10:51</span></p>
+                            <div class="aptDetail_wrap">
+                                <p class="desc_ho">휴먼하우징 202호</p>
+                                <p class="desc_type">
+                                    <span class="badge_type badge_BurningOrange"></span>
+                                    B-방2화1
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="br_bottom">
+                            <div class="area_price dp_f dp_wrap">
+                                <dl class="info_price badge_pink">
+                                    <dt class="badge_FrenchRose">매매</dt>
+                                    <dd>6억 5,300만원</dd>
+                                </dl>
+                                <dl class="info_price badge_yellow">
+                                    <dt class="badge_LightningYellow">전세</dt>
+                                    <dd>-</dd>
+                                </dl>
+                                <dl class="info_price badge_green">
+                                    <dt class="badge_Apple">월세</dt>
+                                    <dd>- / -</dd>
+                                </dl>
+                                <dl class="info_price badge_blue">
+                                    <dt class="badge_SanMarino">투자</dt>
+                                    <dd>-</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="br_bottom active">
+                            <button class="btn_fold dp_sb dp_c">
+                                <p class="bold2 c_gry2">거래정보</p>
+                                <div class="area_arrow">
+                                    <span class="lnr lnr-chevron-down c_gry2"></span>
+                                </div>
+                            </button>
+                            <div class="body_fold area_status">
+                                <div class="inner_body">
+                                    <div class="group_table_view">
+                                        <dl class="list_table_v">
+                                            <dt>계약분류</dt>
+                                            <dd>매매</dd>
+                                        </dl>
+                                        <dl class="list_table_v">
+                                            <dt>계약상태</dt>
+                                            <dd>가능</dd>
+                                        </dl>
+                                        <dl class="list_table_v">
+                                            <dt>가격정보</dt>
+                                            <dd>
+                                                <div class="group_table_view">
+                                                    <dl class="list_table_v">
+                                                        <dt>매매</dt>
+                                                        <dd>6억 5,300만원</dd>
+                                                    </dl>
+                                                    <dl class="list_table_v">
+                                                        <dt>담보실입</dt>
+                                                        <dd>2억 6,120만원</dd>
+                                                    </dl>
+                                                    <dl class="list_table_v">
+                                                        <dt>취득세 지원</dt>
+                                                        <dd>-</dd>
+                                                    </dl>
+                                                    <dl class="list_table_v">
+                                                        <dt>무입여부</dt>
+                                                        <dd>-</dd>
+                                                    </dl>
+                                                    <dl class="list_table_v">
+                                                        <dt>전세</dt>
+                                                        <dd>-</dd>
+                                                    </dl>
+                                                    <dl class="list_table_v">
+                                                        <dt>월세</dt>
+                                                        <dd>-/-</dd>
+                                                    </dl>
+                                                </div>
+                                            </dd>
+                                        </dl>
+                                        <dl class="list_table_v">
+                                            <dt>소유권</dt>
+                                            <dd>법인</dd>
+                                        </dl>
+                                        <dl class="list_table_v">
+                                            <dt>공실체크</dt>
+                                            <dd>공실</dd>
+                                        </dl>
+                                        <dl class="list_table_v">
+                                            <dt>입주가능일</dt>
+                                            <dd>즉시입주</dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="br_bottom active">
+                            <button class="btn_fold dp_sb dp_c">
+                                <p class="bold2 c_gry2">현장정보</p>
+                                <div class="area_arrow">
+                                    <span class="lnr lnr-chevron-down c_gry2"></span>
+                                </div>
+                            </button>
+                            <div class="body_fold area_status">
+                                <div class="inner_body">
+                                    <div class="group_table_view">
+                                        <dl class="list_table_v">
+                                            <dt>총 세대수</dt>
+                                            <dd>10세대</dd>
+                                        </dl>
+                                        <dl class="list_table_v">
+                                            <dt>동(건물)수</dt>
+                                            <dd>1개</dd>
+                                        </dl>
+                                        <dl class="list_table_v">
+                                            <dt>난방타입</dt>
+                                            <dd>도시가스</dd>
+                                        </dl>
+                                    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="br_bottom active">
+                            <button class="btn_fold dp_sb dp_c">
+                                <p class="bold2 c_gry2">동정보</p>
+                                <div class="area_arrow">
+                                    <span class="lnr lnr-chevron-down c_gry2"></span>
+                                </div>
+                            </button>
+                            <div class="body_fold area_status">
+                                <div class="inner_body">
+                                    <div class="group_table_view">
+                                        <dl class="list_table_v">
+                                            <dt>동이름</dt>
+                                            <dd>호원캐슬</dd>
+                                        </dl>
+                                        <dl class="list_table_v">
+                                            <dt>건물형태</dt>
+                                            <dd>도생</dd>
+                                        </dl>
+                                        <dl class="list_table_v">
+                                            <dt>지번주소</dt>
+                                            <dd>서울 서대문구 북가좌동 300-19</dd>
+                                        </dl>
+                                        <dl class="list_table_v">
+                                            <dt>도로명주소</dt>
+                                            <dd>서울특별시 서대문구 거북골로18길 55</dd>
+                                        </dl>
+                                        <dl class="list_table_v">
+                                            <dt>세대수</dt>
+                                            <dd>10세대</dd>
+                                        </dl>
+                                        <dl class="list_table_v">
+                                            <dt>엘리베이터</dt>
+                                            <dd>있음</dd>
+                                        </dl>
+                                        <dl class="list_table_v">
+                                            <dt>주차방식</dt>
+                                            <dd>자주식/직렬</dd>
+                                        </dl>
+                                        <dl class="list_table_v">
+                                            <dt>주차비율</dt>
+                                            <dd>60%</dd>
+                                        </dl>
+                                        <dl class="list_table_v">
+                                            <dt>준공일/사용승인일</dt>
+                                            <dd>2022-01-03</dd>
+                                        </dl>
+                                    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="br_bottom active">
+                            <button class="btn_fold dp_sb dp_c">
+                                <p class="bold2 c_gry2">세대정보</p>
+                                <div class="area_arrow">
+                                    <span class="lnr lnr-chevron-down c_gry2"></span>
+                                </div>
+                            </button>
+                            <div class="body_fold area_status">
+                                <div class="inner_body">
+                                    <div class="group_table_view">
+                                        <dl class="list_table_v">
+                                            <dt>등기정보</dt>
+                                            <dd>도생</dd>
+                                        </dl>
+                                        <dl class="list_table_v">
+                                            <dt>실평수</dt>
+                                            <dd>-</dd>
+                                        </dl>
+                                        <dl class="list_table_v">
+                                            <dt>공급 / 전용면적</dt>
+                                            <dd>- / 59.49m²</dd>
+                                        </dl>
+                                        <dl class="list_table_v">
+                                            <dt>주택방향</dt>
+                                            <dd>북향</dd>
+                                        </dl>
+                                        <dl class="list_table_v">
+                                            <dt>방 / 화장실</dt>
+                                            <dd>4개 / 2개</dd>
+                                        </dl>
+                                        <dl class="list_table_v">
+                                            <dt>에어컨수 / 타입</dt>
+                                            <dd>2개 / 시스템</dd>
+                                        </dl>
+                                        <dl class="list_table_v">
+                                            <dt>거실주방 / 구조</dt>
+                                            <dd>오픈형 / 11자</dd>
+                                        </dl>
+                                        <dl class="list_table_v">
+                                            <dt>조리시설</dt>
+                                            <dd>하이라이트</dd>
+                                        </dl>
+                                        <dl class="list_table_v">
+                                            <dt>바닥형태</dt>
+                                            <dd>마루</dd>
+                                        </dl>
+                                        <dl class="list_table_v">
+                                            <dt>복층</dt>
+                                            <dd>복층아님</dd>
+                                        </dl>
+                                        <dl class="list_table_v">
+                                            <dt>안방 폭 (장롱)</dt>
+                                            <dd>-</dd>
+                                        </dl>
+                                    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="br_bottom active">
+                            <button class="btn_fold dp_sb dp_c">
+                                <p class="bold2 c_gry2">옵션</p>
+                                <div class="area_arrow">
+                                    <span class="lnr lnr-chevron-down c_gry2"></span>
+                                </div>
+                            </button>
+                            <div class="body_fold area_status">
+                                <div class="inner_body">
+                                    <p class="tit_option brtop">세대옵션</p>
+                                    <ul class="list_option">
+                                        <li>
+                                            <div class="icon_zippro"></div>
+                                            <span class="txt_option">공기순환장치</span>
+                                        </li>
+                                        <li>
+                                            <div class="icon_zippro"></div>
+                                            <span class="txt_option">붙박이장</span>
+                                        </li>
+                                        <li>
+                                            <div class="icon_zippro"></div>
+                                            <span class="txt_option">냉장고</span>
+                                        </li>
+                                        <li>
+                                            <div class="icon_zippro"></div>
+                                            <span class="txt_option">오븐레인지</span>
+                                        </li>
+                                        <li>
+                                            <div class="icon_zippro"></div>
+                                            <span class="txt_option">중문</span>
+                                        </li>
+                                    </ul>
+
+                                    <p class="tit_option">생활시설</p>
+                                    <ul class="list_option">
+                                        <li>
+                                            <div class="icon_zippro"></div>
+                                            <span class="txt_option">없음</span>
+                                        </li>
+                                    </ul>
+
+                                    <p class="tit_option">기타시설</p>
+                                    <ul class="list_option">
+                                        <li>
+                                            <div class="icon_zippro"></div>
+                                            <span class="txt_option">CCTV</span>
+                                        </li>
+                                        <li>
+                                            <div class="icon_zippro"></div>
+                                            <span class="txt_option">화재경보기</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="br_bottom">
+                            <button class="btn_fold dp_sb dp_c">
+                                <p class="bold2 c_gry2">현장메모</p>
+                                <div class="area_arrow">
+                                    <span class="lnr lnr-chevron-down c_gry2"></span>
+                                </div>
+                            </button>
+                            <div class="body_fold area_status">
+                                <div class="inner_body">
+                                    <p>-</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="br_bottom">
+                            <button class="btn_fold dp_sb dp_c">
+                                <p class="bold2 c_gry2">타입메모</p>
+                                <div class="area_arrow">
+                                    <span class="lnr lnr-chevron-down c_gry2"></span>
+                                </div>
+                            </button>
+                            <div class="body_fold area_status">
+                                <div class="inner_body">
+                                    <p>-</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="br_bottom">
+                            <button class="btn_fold dp_sb dp_c">
+                                <p class="bold2 c_gry2">세대메모</p>
+                                <div class="area_arrow">
+                                    <span class="lnr lnr-chevron-down c_gry2"></span>
+                                </div>
+                            </button>
+                            <div class="body_fold area_status">
+                                <div class="inner_body">
+                                    <p>-</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div id="single_btn" class="dp_f dp_cc">
+                        <a class="inquireBtn dp_f dp_cc dp_c" href="" title="문의하기">문의하기</a>
+                    </div>
+                </div>
+
+                <script>
+                    //toggle 내용
+                    $(".view3wrap .br_bottom .btn_fold").on("click",function(){
+
+                        if($(this).parent(".view3wrap .br_bottom").hasClass("active")){
+                                
+                            $(this).parent(".view3wrap .br_bottom").removeClass("active");
+                                            
+                        }else{
+
+                            $(this).parent(".view3wrap .br_bottom").addClass("active");
+                        }
+
+                    });
+                    
+                    //뒤로 가기
+                    $(".view3wrap .viewTop .gobackBtn").on("click",function(){ 
+                        $(".view3wrap").stop().fadeOut();
+                    });
+                </script>
+                <div class="view2wrap">
+                    <div class="viewTop dp_sb dp_c">
+                        <div class="gobackBtn dp_f dp_c">
+                            <span class="lnr lnr-chevron-left"></span>
+                        </div>
+                        <div class="centerTit">
+                            <div class="dp_f dp_c dp_cc">
+                                <span class="redTitCir dp_f dp_c dp_cc">신</span>
+                                <span class="gryAptNm">트레비앙</span>
+                            </div>
+                            <p class="smallAdrGry">서울 마포구 연남동 487-8</p>
+                        </div>
+                        <div class="likeBtn">
+                            <!--별-->
+                        </div>
+                    </div>
+                    <div class="inner_filter02">
+                        <div class="view2Visual po_r">
+                            <div class="view2ImgSlick">
+                                <div class="view2ImgBox">
+                                    <img src="../images/view01/view1_img01.JPG" alt="">
+                                </div>
+                                <div class="view2ImgBox">
+                                    <img src="../images/view01/view1_img01.JPG" alt="">
+                                </div>
+                                <div class="view2ImgBox">
+                                    <img src="../images/view01/view1_img01.JPG" alt="">
+                                </div>
+                            </div>
+                            <div class="pagingInfo03"></div>
+                        </div>
+                        <script>
+                            var $status03 = $('.pagingInfo03');
+                            var $slickElement03 = $('.view2ImgSlick');
+
+                            $slickElement03.on('init reInit afterChange', function(event, slick, currentSlide, nextSlide){
+                                //currentSlide is undefined on init -- set it to 0 in this case (currentSlide is 0 based)
+                                var i = (currentSlide ? currentSlide : 0) + 1;
+                                $status03.text(i + ' / ' + slick.slideCount);
+                            });
+
+
+                            $slickElement03.slick({ 
+                                infinite : true, 
+                                autoplay : true,			// 자동 스크롤 사용 여부
+                                autoplaySpeed : 3000, 		// 자동 스크롤 시 다음으로 넘어가는데 걸리는 시간 (ms)
+                                speed: 500,
+                                arrows : true,
+                                fade: false
+                            });
+                        </script>
+                        <div class="dateWrap txt-r br_bottom area_status">
+                            <p class="m_5 c_blue bold">수정일시 <span>2022-01-20 10:51</span></p>
+                        </div>
+
+                        <div class="br_bottom">
+                            <div class="area_price dp_f dp_wrap">
+                                <dl class="info_price badge_pink">
+                                    <dt class="badge_FrenchRose">매매</dt>
+                                    <dd>6억 5,300만원</dd>
+                                </dl>
+                                <dl class="info_price badge_yellow">
+                                    <dt class="badge_LightningYellow">전세</dt>
+                                    <dd>-</dd>
+                                </dl>
+                                <dl class="info_price badge_green">
+                                    <dt class="badge_Apple">월세</dt>
+                                    <dd>- / -</dd>
+                                </dl>
+                                <dl class="info_price badge_blue">
+                                    <dt class="badge_SanMarino">투자</dt>
+                                    <dd>-</dd>
+                                </dl>
+                            </div>
+                        </div>
+
+                        <div class="br_bottom active">
+                            <button class="btn_fold dp_sb dp_c">
+                                <p class="bold2 c_gry2">거래정보</p>
+                                <div class="area_arrow">
+                                    <span class="lnr lnr-chevron-down c_gry2"></span>
+                                </div>
+                            </button>
+                            <div class="body_fold area_status">
+                                <div class="inner_body">
+                                    <div class="group_table_view">
+                                        <dl class="list_table_v">
+                                            <dt>계약분류</dt>
+                                            <dd>매매</dd>
+                                        </dl>
+                                        <dl class="list_table_v">
+                                            <dt>계약상태</dt>
+                                            <dd>미완료</dd>
+                                        </dl>
+                                        <dl class="list_table_v">
+                                            <dt>가격정보</dt>
+                                            <dd>
+                                                <div class="group_table_view">
+                                                    <dl class="list_table_v">
+                                                        <dt>매매</dt>
+                                                        <dd>5억 5,800만원 ~ 5억 6,300만원</dd>
+                                                    </dl>
+                                                    <dl class="list_table_v">
+                                                        <dt>담보실입</dt>
+                                                        <dd>현장문의</dd>
+                                                    </dl>
+                                                    <dl class="list_table_v">
+                                                        <dt>전세</dt>
+                                                        <dd>-</dd>
+                                                    </dl>
+                                                    <dl class="list_table_v">
+                                                        <dt>월세</dt>
+                                                        <dd>-</dd>
+                                                    </dl>
+                                                </div>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="br_bottom active">
+                            <button class="btn_fold dp_sb dp_c">
+                                <p class="bold2 c_gry2">타입상세정보</p>
+                                <div class="area_arrow">
+                                    <span class="lnr lnr-chevron-down c_gry2"></span>
+                                </div>
+                            </button>
+                            <div class="body_fold area_status">
+                                <div class="inner_body">
+                                    <div class="group_table_view">
+                                        <dl class="list_table_v">
+                                            <dt>등기정보</dt>
+                                            <dd>도생</dd>
+                                        </dl>
+                                        <dl class="list_table_v">
+                                            <dt>실평수</dt>
+                                            <dd>-</dd>
+                                        </dl>
+                                        <dl class="list_table_v">
+                                            <dt>공급 / 전용면적</dt>
+                                            <dd>- / 56.19m²</dd>
+                                        </dl>
+                                        <dl class="list_table_v">
+                                            <dt>주택방향</dt>
+                                            <dd>북향</dd>
+                                        </dl>
+                                        <dl class="list_table_v">
+                                            <dt>방 / 화장실</dt>
+                                            <dd>3개 / 2개</dd>
+                                        </dl>
+                                        <dl class="list_table_v">
+                                            <dt>에어컨수 / 타입</dt>
+                                            <dd>2개 / 시스템</dd>
+                                        </dl>
+                                        <dl class="list_table_v">
+                                            <dt>거실주방 / 구조</dt>
+                                            <dd>오픈형 / 11자</dd>
+                                        </dl>
+                                        <dl class="list_table_v">
+                                            <dt>조리시설</dt>
+                                            <dd>하이라이트</dd>
+                                        </dl>
+                                        <dl class="list_table_v">
+                                            <dt>바닥형태</dt>
+                                            <dd>마루</dd>
+                                        </dl>
+                                        <dl class="list_table_v">
+                                            <dt>복층</dt>
+                                            <dd>복층아님</dd>
+                                        </dl>
+                                        <dl class="list_table_v">
+                                            <dt>안방 폭 (장롱)</dt>
+                                            <dd>-</dd>
+                                        </dl>
+                                        <dl class="list_table_v">
+                                            <dt>거실 폭 (쇼파)</dt>
+                                            <dd>-</dd>
+                                        </dl>
+                                        <dl class="list_table_v">
+                                            <dt>냉장고자리</dt>
+                                            <dd>-</dd>
+                                        </dl>
+                                        <dl class="list_table_v">
+                                            <dt>다용도실</dt>
+                                            <dd>1개</dd>
+                                        </dl>
+                                        <dl class="list_table_v">
+                                            <dt>위반여부</dt>
+                                            <dd>위반사항없음</dd>
+                                        </dl>
+                                        <dl class="list_table_v">
+                                            <dt>테라스</dt>
+                                            <dd>- / 없음</dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="br_bottom active">
+                            <button class="btn_fold dp_sb dp_c">
+                                <p class="bold2 c_gry2">옵션</p>
+                                <div class="area_arrow">
+                                    <span class="lnr lnr-chevron-down c_gry2"></span>
+                                </div>
+                            </button>
+                            <div class="body_fold area_status">
+                                <div class="inner_body">
+                                    <p class="tit_option brtop">세대옵션</p>
+                                    <ul class="list_option">
+                                        <li>
+                                            <div class="icon_zippro"></div>
+                                            <span class="txt_option">공기순환장치</span>
+                                        </li>
+                                        <li>
+                                            <div class="icon_zippro"></div>
+                                            <span class="txt_option">붙박이장</span>
+                                        </li>
+                                        <li>
+                                            <div class="icon_zippro"></div>
+                                            <span class="txt_option">냉장고</span>
+                                        </li>
+                                        <li>
+                                            <div class="icon_zippro"></div>
+                                            <span class="txt_option">오븐레인지</span>
+                                        </li>
+                                        <li>
+                                            <div class="icon_zippro"></div>
+                                            <span class="txt_option">중문</span>
+                                        </li>
+                                    </ul>
+
+                                    <p class="tit_option">생활시설</p>
+                                    <ul class="list_option">
+                                        <li>
+                                            <div class="icon_zippro"></div>
+                                            <span class="txt_option">없음</span>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="br_bottom">
+                            <button class="btn_fold dp_sb dp_c">
+                                <p class="bold2 c_gry2">현장메모</p>
+                                <div class="area_arrow">
+                                    <span class="lnr lnr-chevron-down c_gry2"></span>
+                                </div>
+                            </button>
+                            <div class="body_fold area_status">
+                                <div class="inner_body">
+                                    <p>-</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="br_bottom">
+                            <button class="btn_fold dp_sb dp_c">
+                                <p class="bold2 c_gry2">타입메모</p>
+                                <div class="area_arrow">
+                                    <span class="lnr lnr-chevron-down c_gry2"></span>
+                                </div>
+                            </button>
+                            <div class="body_fold area_status">
+                                <div class="inner_body">
+                                    <p>-</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div id="single_btn" class="dp_f dp_cc">
+                        <a class="inquireBtn dp_f dp_cc dp_c" href="" title="문의하기">문의하기</a>
+                    </div>
+                </div>
+
+                <script>
+                    //toggle 내용
+                    $(".view2wrap .br_bottom .btn_fold").on("click",function(){
+
+                        if($(this).parent(".view2wrap .br_bottom").hasClass("active")){
+                                
+                            $(this).parent(".view2wrap .br_bottom").removeClass("active");
+                                            
+                        }else{
+
+                            $(this).parent(".view2wrap .br_bottom").addClass("active");
+                        }
+
+                    });
+
+                    //뒤로 가기
+                    $(".view2wrap .viewTop .gobackBtn").on("click",function(){ 
+                        $(".view2wrap").stop().fadeOut();
+                    });
+                </script>
+                <div class="view1wrap">
+                    <div class="viewTop dp_sb dp_c">
+                        <div class="gobackBtn dp_f dp_c">
+                            <span class="lnr lnr-chevron-left"></span>
+                        </div>
+                        <div class="centerTit">
+                            <div class="dp_f dp_c dp_cc">
+                                <span class="redTitCir dp_f dp_c dp_cc">신</span>
+                                <span class="gryAptNm">트레비앙</span>
+                            </div>
+                            <p class="smallAdrGry">서울 마포구 연남동 487-8</p>
+                        </div>
+                        <div class="likeBtn">
+                            <!--별-->
+                        </div>
+                    </div>
+                    <div class="inner_filter02">
+                        <div class="view1Visual po_r">
+                            <div class="view1ImgSlick">
+                                <div class="view1ImgBox">
+                                    <img src="../images/view01/view1_img01.JPG" alt="">
+                                </div>
+                                <div class="view1ImgBox">
+                                    <img src="../images/view01/view1_img01.JPG" alt="">
+                                </div>
+                                <div class="view1ImgBox">
+                                    <img src="../images/view01/view1_img01.JPG" alt="">
+                                </div>
+                            </div>
+                            <div class="pagingInfo"></div>
+                        </div>
+                        <script>
+                            var $status = $('.pagingInfo');
+                            var $slickElement = $('.view1ImgSlick');
+
+                            $slickElement.on('init reInit afterChange', function(event, slick, currentSlide, nextSlide){
+                                //currentSlide is undefined on init -- set it to 0 in this case (currentSlide is 0 based)
+                                var i = (currentSlide ? currentSlide : 0) + 1;
+                                $status.text(i + ' / ' + slick.slideCount);
+                            });
+
+
+                            $slickElement.slick({ 
+                                infinite : true, 
+                                autoplay : true,			// 자동 스크롤 사용 여부
+                                autoplaySpeed : 3000, 		// 자동 스크롤 시 다음으로 넘어가는데 걸리는 시간 (ms)
+                                speed: 500,
+                                arrows : true,
+                                fade: false
+                            });
+                        </script>
+                        <div class="dateWrap txt-r br_bottom area_status">
+                            <p class="m_5 c_blue bold">수정일시 <span>2022-01-20 10:51</span></p>
+                            <p class="c_blue bold">등록일자 <span>2022-01-14</span></p>
+                        </div>
+
+                        <div class="br_bottom">
+                            <div class="dp_f dp_c dp_cc area_status">
+                                <dl>
+                                    <dd>10</dd>
+                                    <dt>계약가능</dt>
+                                </dl>
+                                <dl>
+                                    <dd>0</dd>
+                                    <dt>계약진행중</dt>
+                                </dl>
+                                <dl>
+                                    <dd>0</dd>
+                                    <dt>계약보류</dt>
+                                </dl>
+                                <dl>
+                                    <dd>0</dd>
+                                    <dt>준비중</dt>
+                                </dl>
+                                <dl>
+                                    <dd>0</dd>
+                                    <dt>계약완료</dt>
+                                </dl>
+                            </div>
+                        </div>
+
+                        <div class="br_bottom active">
+                            <button class="btn_fold dp_sb dp_c">
+                                <p class="bold2 c_gry2">현장정보</p>
+                                <div class="area_arrow">
+                                    <span class="lnr lnr-chevron-down c_gry2"></span>
+                                </div>
+                            </button>
+                            <div class="body_fold area_status">
+                                <div class="inner_body">
+                                    <div class="group_table_view">
+                                        <dl class="list_table_v">
+                                            <dt>총 세대수</dt>
+                                            <dd>10세대</dd>
+                                        </dl>
+                                        <dl class="list_table_v">
+                                            <dt>동(건물)수</dt>
+                                            <dd>1개</dd>
+                                        </dl>
+                                        <dl class="list_table_v">
+                                            <dt>난방타입</dt>
+                                            <dd>도시가스</dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="br_bottom active">
+                            <button class="btn_fold dp_sb dp_c">
+                                <p class="bold2 c_gry2">동정보</p>
+                                <div class="area_arrow">
+                                    <span class="lnr lnr-chevron-down c_gry2"></span>
+                                </div>
+                            </button>
+                            <div class="body_fold area_status">
+                                <div class="inner_body">
+                                    <div class="redCirTit dp_ib red2 bold2 c_wht">트레비앙</div>
+                                    <div class="group_table_view">
+                                        <dl class="list_table_v">
+                                            <dt>동이름</dt>
+                                            <dd>트레비앙</dd>
+                                        </dl>
+                                        <dl class="list_table_v">
+                                            <dt>건물형태</dt>
+                                            <dd>다세대/연립, 상가</dd>
+                                        </dl>
+                                        <dl class="list_table_v">
+                                            <dt>지번주소</dt>
+                                            <dd>서울 마포구 연남동 487-8</dd>
+                                        </dl>
+                                        <dl class="list_table_v">
+                                            <dt>지번주소</dt>
+                                            <dd>서울 마포구 연남동 487-8</dd>
+                                        </dl>
+                                        <dl class="list_table_v">
+                                            <dt>도로명주소</dt>
+                                            <dd>서울특별시 마포구 성미산로17길 100</dd>
+                                        </dl>
+                                        <dl class="list_table_v">
+                                            <dt>세대수</dt>
+                                            <dd>10세대</dd>
+                                        </dl>
+                                        <dl class="list_table_v">
+                                            <dt>엘리베이터</dt>
+                                            <dd>있음</dd>
+                                        </dl>
+                                        <dl class="list_table_v">
+                                            <dt>주차방식</dt>
+                                            <dd>자주식/직렬, 자주식/병렬</dd>
+                                        </dl>
+                                        <dl class="list_table_v">
+                                            <dt>주차비율</dt>
+                                            <dd>70%</dd>
+                                        </dl>
+                                        <dl class="list_table_v">
+                                            <dt>준공일/사용승인일</dt>
+                                            <dd>2022-01-14</dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="br_bottom active">
+                            <button class="btn_fold dp_sb dp_c">
+                                <p class="bold2 c_gry2">총 타입 <span class="gry_amt">5개</span></p>
+                                <div class="area_arrow">
+                                    <span class="lnr lnr-chevron-down c_gry2"></span>
+                                </div>
+                            </button>
+                            <div class="body_fold">
+                                <div class="listWrap">
+                                    <div class="listBox">
+                                        <a class="dp_sb dp_wrap" href="" title="">
+                                            <div class="listText">
+                                                <div class="listText_tit dp_f dp_c dp_wrap">
+                                                    <div class="small_cir yello"></div>
+                                                    <p class="tit_item f14 bold2 c_yellow">A-방3화2</p>
+                                                    <p class="f12 c_gry">다세대/연립</p>
+                                                </div>
+                                                <ul class="info_price">
+                                                    <li class="dp_f dp_c">
+                                                        <span class="badge badge_pink">매매</span>
+                                                        <span class="ss_price dp_f dp_c f12 bold2">8억 3,500</span>
+                                                    </li>
+                                                    <li class="dp_f dp_c">
+                                                        <span class="badge badge_default">전세</span>
+                                                    </li>
+                                                    <li class="dp_f dp_c">
+                                                        <span class="badge badge_default">월세</span>
+                                                    </li>
+                                                    <li class="dp_f dp_c">
+                                                        <span class="badge badge_default">투자</span>
+                                                    </li>
+                                                </ul>
+                                                <p class="lastHouse">잔여세대 <span>2</span></p>
+                                            </div>
+                                            <div class="listImgWrap02">
+                                                <!--배경이미지-->
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="listBox">
+                                        <a class="dp_sb dp_wrap" href="" title="">
+                                            <div class="listText">
+                                                <div class="listText_tit dp_f dp_c dp_wrap">
+                                                    <div class="small_cir blue"></div>
+                                                    <p class="tit_item f14 bold2 c_blue2">B-방3화2</p>
+                                                    <p class="f12 c_gry">다세대/연립</p>
+                                                </div>
+                                                <ul class="info_price">
+                                                    <li class="dp_f dp_c">
+                                                        <span class="badge badge_pink">매매</span>
+                                                        <span class="ss_price dp_f dp_c f12 bold2">8억 3,500</span>
+                                                    </li>
+                                                    <li class="dp_f dp_c">
+                                                        <span class="badge badge_default">전세</span>
+                                                    </li>
+                                                    <li class="dp_f dp_c">
+                                                        <span class="badge badge_default">월세</span>
+                                                    </li>
+                                                    <li class="dp_f dp_c">
+                                                        <span class="badge badge_default">투자</span>
+                                                    </li>
+                                                </ul>
+                                                <p class="lastHouse">잔여세대 <span>2</span></p>
+                                            </div>
+                                            <div class="listImgWrap02">
+                                                <!--배경이미지-->
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="listBox">
+                                        <a class="dp_sb dp_wrap" href="" title="">
+                                            <div class="listText">
+                                                <div class="listText_tit dp_f dp_c dp_wrap">
+                                                    <div class="small_cir grn"></div>
+                                                    <p class="tit_item f14 bold2 c_grn">C-방1.5화1</p>
+                                                    <p class="f12 c_gry">다세대/연립</p>
+                                                </div>
+                                                <ul class="info_price">
+                                                    <li class="dp_f dp_c">
+                                                        <span class="badge badge_pink">매매</span>
+                                                        <span class="ss_price dp_f dp_c f12 bold2">8억 3,500</span>
+                                                    </li>
+                                                    <li class="dp_f dp_c">
+                                                        <span class="badge badge_default">전세</span>
+                                                    </li>
+                                                    <li class="dp_f dp_c">
+                                                        <span class="badge badge_default">월세</span>
+                                                    </li>
+                                                    <li class="dp_f dp_c">
+                                                        <span class="badge badge_default">투자</span>
+                                                    </li>
+                                                </ul>
+                                                <p class="lastHouse">잔여세대 <span>2</span></p>
+                                            </div>
+                                            <div class="listImgWrap02">
+                                                <!--배경이미지-->
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="listBox">
+                                        <a class="dp_sb dp_wrap" href="" title="">
+                                            <div class="listText">
+                                                <div class="listText_tit dp_f dp_c dp_wrap">
+                                                    <div class="small_cir red"></div>
+                                                    <p class="tit_item f14 bold2 c_red2">D-방3화2 왕테</p>
+                                                    <p class="f12 c_gry">다세대/연립</p>
+                                                </div>
+                                                <ul class="info_price">
+                                                    <li class="dp_f dp_c">
+                                                        <span class="badge badge_pink">매매</span>
+                                                        <span class="ss_price dp_f dp_c f12 bold2">8억 3,500</span>
+                                                    </li>
+                                                    <li class="dp_f dp_c">
+                                                        <span class="badge badge_default">전세</span>
+                                                    </li>
+                                                    <li class="dp_f dp_c">
+                                                        <span class="badge badge_default">월세</span>
+                                                    </li>
+                                                    <li class="dp_f dp_c">
+                                                        <span class="badge badge_default">투자</span>
+                                                    </li>
+                                                </ul>
+                                                <p class="lastHouse">잔여세대 <span>2</span></p>
+                                            </div>
+                                            <div class="listImgWrap02">
+                                                <!--배경이미지-->
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="listBox">
+                                        <a class="dp_sb dp_wrap" href="" title="">
+                                            <div class="listText">
+                                                <div class="listText_tit dp_f dp_c dp_wrap">
+                                                    <div class="small_cir gry"></div>
+                                                    <p class="tit_item f14 bold2 c_gry3">A-방3화2</p>
+                                                    <p class="f12 c_gry">다세대/연립</p>
+                                                </div>
+                                                <ul class="info_price">
+                                                    <li class="dp_f dp_c">
+                                                        <span class="badge badge_pink">매매</span>
+                                                        <span class="ss_price dp_f dp_c f12 bold2">8억 3,500</span>
+                                                    </li>
+                                                    <li class="dp_f dp_c">
+                                                        <span class="badge badge_default">전세</span>
+                                                    </li>
+                                                    <li class="dp_f dp_c">
+                                                        <span class="badge badge_default">월세</span>
+                                                    </li>
+                                                    <li class="dp_f dp_c">
+                                                        <span class="badge badge_default">투자</span>
+                                                    </li>
+                                                </ul>
+                                                <p class="lastHouse">잔여세대 <span>2</span></p>
+                                            </div>
+                                            <div class="listImgWrap02">
+                                                <!--배경이미지-->
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="br_bottom active">
+                            <button class="btn_fold dp_sb dp_c">
+                                <p class="bold2 c_gry2">분양표</p>
+                                <div class="area_arrow">
+                                    <span class="lnr lnr-chevron-down c_gry2"></span>
+                                </div>
+                            </button>
+                            <div class="body_fold area_status">
+                                <div class="inner_body">
+                                    <div class="redCirTit dp_ib red2 bold2 c_wht">트레비앙</div>
+                                    <div class="row_floor_wrap">
+                                        <div class="row_floor dp_f dp_c">
+                                            <div class="item_ho dp_f dp_fc dp_c">
+                                                <div class="dp_f dp_c dp_cc dp_wrap">
+                                                    <span class="badge badge_pink">매매</span>
+                                                </div>
+                                                <p class="c_gry2 bold2">501호</p>
+                                                <div class="dp_f dp_c">
+                                                    <div class="small_cir gry"></div>
+                                                    <span class="c_gry3 f10">E-방3화1 테</span>
+                                                </div>
+                                            </div>
+                                            <div class="item_ho dp_f dp_fc dp_c">
+                                                <div class="dp_f dp_c dp_cc dp_wrap">
+                                                    <span class="badge badge_pink">매매</span>
+                                                </div>
+                                                <p class="c_gry2 bold2">502호</p>
+                                                <div class="dp_f dp_c">
+                                                    <div class="small_cir gry"></div>
+                                                    <span class="c_gry3 f10">E-방3화1 테</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row_floor_wrap">
+                                        <div class="row_floor dp_f dp_c">
+                                            <div class="item_ho dp_f dp_fc dp_c">
+                                                <div class="dp_f dp_c dp_cc dp_wrap">
+                                                    <span class="badge badge_pink">매매</span>
+                                                    <span class="badge badge_yellow">전세</span>
+                                                </div>
+                                                <p class="c_gry2 bold2">401호</p>
+                                                <div class="dp_f dp_c">
+                                                    <div class="small_cir red2"></div>
+                                                    <span class="c_red2 f10">E-방3화1 테</span>
+                                                </div>
+                                            </div>
+                                            <div class="item_ho dp_f dp_fc dp_c item_dimmed">
+                                                <div class="dp_f dp_c dp_cc dp_wrap">
+                                                    <span class="badge badge_pink">매매</span>
+                                                </div>
+                                                <p class="c_gry2 bold2 dp_f dp_c">402호 <span class="redCir f10 dp_f dp_c dp_cc">완</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row_floor_wrap">
+                                        <div class="row_floor dp_f dp_c">
+                                            <div class="item_ho dp_f dp_fc dp_c">
+                                                <div class="dp_f dp_c dp_cc dp_wrap">
+                                                    <span class="badge badge_pink">매매</span>
+                                                </div>
+                                                <p class="c_gry2 bold2">301호</p>
+                                                <div class="dp_f dp_c">
+                                                    <div class="small_cir yello"></div>
+                                                    <span class="c_yellow f10">A-방3화1 테</span>
+                                                </div>
+                                            </div>
+                                            <div class="item_ho dp_f dp_fc dp_c">
+                                                <div class="dp_f dp_c dp_cc dp_wrap">
+                                                    <span class="badge badge_pink">매매</span>
+                                                </div>
+                                                <p class="c_gry2 bold2">302호</p>
+                                                <div class="dp_f dp_c">
+                                                    <div class="small_cir blue"></div>
+                                                    <span class="c_blue2 f10">B-방3화1 테</span>
+                                                </div>
+                                            </div>
+                                            <div class="item_ho dp_f dp_fc dp_c">
+                                                <div class="dp_f dp_c dp_cc dp_wrap">
+                                                    <span class="badge badge_pink">매매</span>
+                                                </div>
+                                                <p class="c_gry2 bold2">303호</p>
+                                                <div class="dp_f dp_c">
+                                                    <div class="small_cir grn"></div>
+                                                    <span class="c_grn f10">C-방3화1 테</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row_floor_wrap">
+                                        <div class="row_floor dp_f dp_c">
+                                            <div class="item_ho dp_f dp_fc dp_c">
+                                                <div class="dp_f dp_c dp_cc dp_wrap">
+                                                    <span class="badge badge_pink">매매</span>
+                                                </div>
+                                                <p class="c_gry2 bold2">201호</p>
+                                                <div class="dp_f dp_c">
+                                                    <div class="small_cir yello"></div>
+                                                    <span class="c_yellow f10">A-방3화1 테</span>
+                                                </div>
+                                            </div>
+                                            <div class="item_ho dp_f dp_fc dp_c">
+                                                <div class="dp_f dp_c dp_cc dp_wrap">
+                                                    <span class="badge badge_pink">매매</span>
+                                                </div>
+                                                <p class="c_gry2 bold2">202호</p>
+                                                <div class="dp_f dp_c">
+                                                    <div class="small_cir blue"></div>
+                                                    <span class="c_blue2 f10">B-방3화1 테</span>
+                                                </div>
+                                            </div>
+                                            <div class="item_ho dp_f dp_fc dp_c">
+                                                <div class="dp_f dp_c dp_cc dp_wrap">
+                                                    <span class="badge badge_pink">매매</span>
+                                                </div>
+                                                <p class="c_gry2 bold2">203호</p>
+                                                <div class="dp_f dp_c">
+                                                    <div class="small_cir grn"></div>
+                                                    <span class="c_grn f10">C-방3화1 테</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row_floor_wrap">
+                                        <div class="row_floor dp_f dp_c">
+                                            <div class="item_ho item_no_house dp_f dp_fc dp_c dp_cc">
+                                                <span class="c_gry bold">1F 상가</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="br_bottom active">
+                            <button class="btn_fold dp_sb dp_c">
+                                <p class="bold2 c_gry2">잔여정보</p>
+                                <div class="area_arrow">
+                                    <span class="lnr lnr-chevron-down c_gry2"></span>
+                                </div>
+                            </button>
+                            <div class="body_fold area_status">
+                                <div class="inner_body">
+                                    <div class="redCirTit dp_ib red2 bold2 c_wht">트레비앙</div>
+                                    <div class="table_wrap">
+                                        <table>
+                                            <colgroup>
+                                                <col>
+                                                <col style="width: 15%;">
+                                                <col>
+                                                <col>
+                                                <col>
+                                                <col style="width: 15%;">
+                                                <col style="width: 7%;">
+                                                <col style="width: 7%;">
+                                                <col>
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th>호</th>
+                                                    <th>방/화장실</th>
+                                                    <th>복/테</th>
+                                                    <th>매매</th>
+                                                    <th>전세</th>
+                                                    <th>월세</th>
+                                                    <th>실평</th>
+                                                    <th>전용</th>
+                                                    <th>등기</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>501호</td>
+                                                    <td>3/1</td>
+                                                    <td>-/테</td>
+                                                    <td>6억 1,500만원</td>
+                                                    <td>-</td>
+                                                    <td>-/-</td>
+                                                    <td>-</td>
+                                                    <td>57.32</td>
+                                                    <td>다세대</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>501호</td>
+                                                    <td>3/1</td>
+                                                    <td>-/테</td>
+                                                    <td>6억 1,500만원</td>
+                                                    <td>-</td>
+                                                    <td>-/-</td>
+                                                    <td>-</td>
+                                                    <td>57.32</td>
+                                                    <td>다세대</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>501호</td>
+                                                    <td>3/1</td>
+                                                    <td>-/테</td>
+                                                    <td>6억 1,500만원</td>
+                                                    <td>-</td>
+                                                    <td>-/-</td>
+                                                    <td>-</td>
+                                                    <td>57.32</td>
+                                                    <td>다세대</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>501호</td>
+                                                    <td>3/1</td>
+                                                    <td>-/테</td>
+                                                    <td>6억 1,500만원</td>
+                                                    <td>-</td>
+                                                    <td>-/-</td>
+                                                    <td>-</td>
+                                                    <td>57.32</td>
+                                                    <td>다세대</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>501호</td>
+                                                    <td>3/1</td>
+                                                    <td>-/테</td>
+                                                    <td>6억 1,500만원</td>
+                                                    <td>-</td>
+                                                    <td>-/-</td>
+                                                    <td>-</td>
+                                                    <td>57.32</td>
+                                                    <td>다세대</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>501호</td>
+                                                    <td>3/1</td>
+                                                    <td>-/테</td>
+                                                    <td>6억 1,500만원</td>
+                                                    <td>-</td>
+                                                    <td>-/-</td>
+                                                    <td>-</td>
+                                                    <td>57.32</td>
+                                                    <td>다세대</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>501호</td>
+                                                    <td>3/1</td>
+                                                    <td>-/테</td>
+                                                    <td>6억 1,500만원</td>
+                                                    <td>-</td>
+                                                    <td>-/-</td>
+                                                    <td>-</td>
+                                                    <td>57.32</td>
+                                                    <td>다세대</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>501호</td>
+                                                    <td>3/1</td>
+                                                    <td>-/테</td>
+                                                    <td>6억 1,500만원</td>
+                                                    <td>-</td>
+                                                    <td>-/-</td>
+                                                    <td>-</td>
+                                                    <td>57.32</td>
+                                                    <td>다세대</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>501호</td>
+                                                    <td>3/1</td>
+                                                    <td>-/테</td>
+                                                    <td>6억 1,500만원</td>
+                                                    <td>-</td>
+                                                    <td>-/-</td>
+                                                    <td>-</td>
+                                                    <td>57.32</td>
+                                                    <td>다세대</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>501호</td>
+                                                    <td>3/1</td>
+                                                    <td>-/테</td>
+                                                    <td>6억 1,500만원</td>
+                                                    <td>-</td>
+                                                    <td>-/-</td>
+                                                    <td>-</td>
+                                                    <td>57.32</td>
+                                                    <td>다세대</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="br_bottom active">
+                            <button class="btn_fold dp_sb dp_c">
+                                <p class="bold2 c_gry2">속지사진</p>
+                                <div class="area_arrow">
+                                    <span class="lnr lnr-chevron-down c_gry2"></span>
+                                </div>
+                            </button>
+                            <div class="body_fold area_status">
+                                <div class="inner_body">
+                                    <div class="view1Visual02 po_r">
+                                        <div class="view1ImgSlick02">
+                                            <div class="view1ImgBox02">
+                                                <img src="../images/view01/view1_img02.jpg" alt="">
+                                            </div>
+                                            <div class="view1ImgBox02">
+                                                <img src="../images/view01/view1_img02.jpg" alt="">
+                                            </div>
+                                            <div class="view1ImgBox02">
+                                                <img src="../images/view01/view1_img02.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="pagingInfo02"></div>
+                                    </div>
+                                    <script>
+                                        var $status02 = $('.pagingInfo02');
+                                        var $slickElement02 = $('.view1ImgSlick02');
+
+                                        $slickElement02.on('init reInit afterChange', function(event, slick, currentSlide, nextSlide){
+                                            //currentSlide is undefined on init -- set it to 0 in this case (currentSlide is 0 based)
+                                            var i = (currentSlide ? currentSlide : 0) + 1;
+                                            $status02.text(i + ' / ' + slick.slideCount);
+                                        });
+
+
+                                        $slickElement02.slick({ 
+                                            infinite : true, 
+                                            autoplay : true,			// 자동 스크롤 사용 여부
+                                            autoplaySpeed : 3000, 		// 자동 스크롤 시 다음으로 넘어가는데 걸리는 시간 (ms)
+                                            speed: 500,
+                                            arrows : true,
+                                            fade: false
+                                        });
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="br_bottom">
+                            <button class="btn_fold dp_sb dp_c">
+                                <p class="bold2 c_gry2">상세내용</p>
+                                <div class="area_arrow">
+                                    <span class="lnr lnr-chevron-down c_gry2"></span>
+                                </div>
+                            </button>
+                            <div class="body_fold area_status">
+                                <div class="inner_body">
+                                    <p>-</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="br_bottom">
+                            <button class="btn_fold dp_sb dp_c">
+                                <p class="bold2 c_gry2">팀메모 등록</p>
+                                <div class="area_arrow">
+                                    <span class="lnr lnr-chevron-down c_gry2"></span>
+                                </div>
+                            </button>
+                            <div class="body_fold area_status">
+                                <div class="inner_body">
+                                    <div class="dp_sb">
+                                        <div class="scoreWrap dp_f dp_end">
+                                            <ul class="starWrap dp_f">
+                                                <li class="star">
+                                                    <!--별--->
+                                                </li>
+                                                <li class="star">
+                                                    <!--별--->
+                                                </li>
+                                                <li class="star">
+                                                    <!--별--->
+                                                </li>
+                                                <li class="star">
+                                                    <!--별--->
+                                                </li>
+                                                <li class="star">
+                                                    <!--별--->
+                                                </li>
+                                            </ul>
+                                            <p class="gryScore">0점</p>
+                                        </div>
+                                        <div class="textCount">
+                                            <span>0</span>
+                                            <span>/</span>
+                                            <span>300</span>
+                                        </div>
+                                    </div>
+                                    <div class="memoWrap">
+                                        <textarea name="" id="">팀메모를 입력해주세요
+                                        </textarea>
+                                    </div>
+                                    <div class="inputWrap">
+                                        <input type="text" placeholder="링크를 입력해주세요">
+                                    </div>
+                                    <div class="dp_sb dp_c switchWrap">
+                                        <div class="dp_f dp_c">
+                                            <div class="switch">
+                                                <div class="whtCirSmall"></div>
+                                            </div>
+                                            <span class="grytopfix">상단고정</span>
+                                        </div>
+                                        <a class="saveBtn" href="" title="저장">저장</a>
+                                    </div>
+                                    <script>
+                                        var flag = true;
+                                        $(".switchWrap .switch").click(function(event){
+                                            if(flag){
+                                                $(this).removeClass("on");
+                                                $('.switchWrap .whtCirSmall').stop().animate({'left':'3px'},250);
+
+                                                flag= false;
+                                            } else {
+                                                $(this).addClass("on");
+                                                $('.switchWrap .whtCirSmall').stop().animate({'left':'22px'},250);
+
+                                                flag= true;
+                                            }
+                                        });
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="br_bottom">
+                            <button class="btn_fold dp_sb dp_c">
+                                <div class="dp_f dp_c">
+                                    <p class="bold2 c_gry2">팀메모</p>
+                                    <span class="gryCount">(0)</span>
+                                </div>
+                                <div class="dp_f dp_c">
+                                    <p class="perCount">
+                                        <span>0</span>
+                                        <span class="gryCount">/ 5.0 (0명)</span>
+                                    </p>
+                                    <div class="area_arrow">
+                                        <span class="lnr lnr-chevron-down c_gry2"></span>
+                                    </div>
+                                </div>
+                            </button>
+                            <div class="body_fold area_status">
+                                <div class="inner_body">
+                                    <p style="margin: 50px 0; text-align: center; color: #888; font-size: 0.75rem;">등록된 팀메모가 없습니다.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div id="single_btn" class="dp_f dp_cc">
+                        <a class="inquireBtn dp_f dp_cc dp_c" href="" title="문의하기">문의하기</a>
+                    </div>
+                </div>
+                <script>
+                    //toggle 내용
+                    $(".view1wrap .br_bottom .btn_fold").on("click",function(){
+
+                        if($(this).parent(".view1wrap .br_bottom").hasClass("active")){
+                                
+                            $(this).parent(".view1wrap .br_bottom").removeClass("active");
+                                            
+                        }else{
+
+                            $(this).parent(".view1wrap .br_bottom").addClass("active");
+                        }
+
+                    });
+
+                    //뒤로 가기
+                    $(".view1wrap .viewTop .gobackBtn").on("click",function(){ 
+                        $(".view1wrap").stop().fadeOut();
+                    });
+                </script>
+                <div class="searchBarWrap">
+                    <div class="searchBar">
+                        <div class="dp_sb">
+                            <select name="" id="">
+                                <option value="">주소</option>
+                                <option value="">현장이름</option>
+                            </select>
+                            <div class="inputWrap dp_f">
+                                <input type="text">
+                                <button class="searchBtn"><img src="../images/search_icon.png" alt=""></button>
+                            </div>
+                            <a class="filterBtn dp_f dp_c dp_cc" href="" title=""><img src="../images/filter.svg" alt=""></a>
+                            <a class="searchMenuBtn dp_f dp_c dp_cc" href="" title=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="board_tbl">
+                    <div class="btn_close"></div>
+                    <div class="boardTop">
+                        <p class="board_tit c_gry2 bold2 txt-c">고객센터</p>
+                    </div>
+                    <div class="inner_board">
+                        <div class="searchBox dp_f dp_end02">
+                            <select name="" id="">
+                                <option value="">제목</option>
+                                <option value="">출처</option>
+                            </select>
+                            <div class="inputWrap dp_f">
+                                <input type="text">
+                                <button class="searchBtn"><img src="../images/search_icon.png" alt=""></button>
+                            </div>
+                        </div>
+                        <div class="table_wrap zippro_board">
+                            <table>
+                                <colgroup>
+                                    <col style="width: 10%;">
+                                    <col style="width: 70%;">
+                                    <col style="width: 20%;">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>번호</th>
+                                        <th>제목</th>
+                                        <th>등록일</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                   <!--  <tr>
+                                        <td colspan="3" class="txt-c">등록된 게시물이 없습니다</td>
+                                    </tr> -->
+                                    <tr>
+                                        <td>1</td>
+                                        <td class="ellipsis">테스트입니다. 테스트입니다. 테스트입니다. 테스트입니다. 테스트입니다. 테스트입니다.</td>
+                                        <td>2023.01.18</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td class="ellipsis">테스트입니다. 테스트입니다. 테스트입니다. 테스트입니다. 테스트입니다. 테스트입니다.</td>
+                                        <td>2023.01.18</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td class="ellipsis">테스트입니다. 테스트입니다. 테스트입니다. 테스트입니다. 테스트입니다. 테스트입니다.</td>
+                                        <td>2023.01.18</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td class="ellipsis">테스트입니다. 테스트입니다. 테스트입니다. 테스트입니다. 테스트입니다. 테스트입니다.</td>
+                                        <td>2023.01.18</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td class="ellipsis">테스트입니다. 테스트입니다. 테스트입니다. 테스트입니다. 테스트입니다. 테스트입니다.</td>
+                                        <td>2023.01.18</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td class="ellipsis">테스트입니다. 테스트입니다. 테스트입니다. 테스트입니다. 테스트입니다. 테스트입니다.</td>
+                                        <td>2023.01.18</td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td>
+                                        <td class="ellipsis">테스트입니다. 테스트입니다. 테스트입니다. 테스트입니다. 테스트입니다. 테스트입니다.</td>
+                                        <td>2023.01.18</td>
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td class="ellipsis">테스트입니다. 테스트입니다. 테스트입니다. 테스트입니다. 테스트입니다. 테스트입니다.</td>
+                                        <td>2023.01.18</td>
+                                    </tr>
+                                    <tr>
+                                        <td>9</td>
+                                        <td class="ellipsis">테스트입니다. 테스트입니다. 테스트입니다. 테스트입니다. 테스트입니다. 테스트입니다.</td>
+                                        <td>2023.01.18</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10</td>
+                                        <td class="ellipsis">테스트입니다. 테스트입니다. 테스트입니다. 테스트입니다. 테스트입니다. 테스트입니다.</td>
+                                        <td>2023.01.18</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <ul class="pageNum dp_f dp_c dp_cc">
+                            <li><a href="" title="prev"><</a></li>
+                            <li class="on"><a href="" title="num">1</a></li>
+                            <li><a href="" title="num">2</a></li>
+                            <li><a href="" title="num">3</a></li>
+                            <li><a href="" title="next">></a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="detailWrap">
+                    <div class="hght100 dp_f dp_fc" style="overflow: hidden;">
+                
+                        <div class="filterWrap">
+                            <div class="filterTop">
+                                <ul class="tabBtn dp_sb">
+                                    <li class="on"><a class="dp_f dp_c dp_cc f18 bold2" href="">전체<span>15</span></a></li>
+                                    <li><a class="dp_f dp_c dp_cc f18 bold2" href="">신축<span>15</span></a></li>
+                                    <li><a class="dp_f dp_c dp_cc f18 bold2" href="">구옥</a></li>
+                                    <li><a class="dp_f dp_c dp_cc f18 bold2" href="">관심<span>2</span></a></li>
+                                </ul>
+                            </div>
+                            <div class="dp_sb dp_c filterBot">
+                                <span class="c_gry2 f14 totalAmt">총 15개</span>
+                                <select name="" id="">
+                                    <option value="">최신순</option>
+                                    <option value="">가격높은순</option>
+                                    <option value="">가격낮은순</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="listtabContWrap">
+                            <div class="tabCont">
+                                <div class="listWrap">
+                                    <div class="listBox">
+                                        <a class="dp_sb dp_wrap" href="" title="">
+                                            <div class="listText">
+                                                <div class="listText_tit dp_f dp_c dp_wrap">
+                                                    <p class="redCir f14 bold dp_f dp_c dp_cc">신</p>
+                                                    <p class="tit_item f14 bold2">트레비앙</p>
+                                                    <p class="f12 c_gry">서울 마포구 연남동 487-8</p>
+                                                </div>
+                                                <ul class="info_price">
+                                                    <li class="dp_f dp_c">
+                                                        <span class="badge badge_pink">매매</span>
+                                                        <span class="ss_price dp_f dp_c f12 bold2">4억 3,000 ~ 8억 3,500</span>
+                                                        <span class="c_type">R15</span>
+                                                    </li>
+                                                    <li class="dp_f dp_c">
+                                                        <span class="badge badge_default">전세</span>
+                
+                                                    </li>
+                                                    <li class="dp_f dp_c">
+                                                        <span class="badge badge_default">월세</span>
+                        
+                                                    </li>
+                                                    <li class="dp_f dp_c">
+                                                        <span class="badge badge_default">투자</span>
+                
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="listImgWrap">
+                                                <!--배경 이미지-->
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="listBox">
+                                        <a class="dp_sb dp_wrap" href="" title="">
+                                            <div class="listText">
+                                                <div class="listText_tit dp_f dp_c dp_wrap">
+                                                    <p class="redCir f14 bold dp_f dp_c dp_cc">신</p>
+                                                    <p class="tit_item f14 bold2">트레비앙</p>
+                                                    <p class="f12 c_gry">서울 마포구 연남동 487-8</p>
+                                                </div>
+                                                <ul class="info_price">
+                                                    <li class="dp_f dp_c">
+                                                        <span class="badge badge_pink">매매</span>
+                                                        <span class="ss_price dp_f dp_c f12 bold2">4억 3,000 ~ 8억 3,500</span>
+                                                        <span class="c_type">R15</span>
+                                                    </li>
+                                                    <li class="dp_f dp_c">
+                                                        <span class="badge badge_default">전세</span>
+                                                        <span class="ss_price dp_f dp_c f12 bold2">4억 3,000 ~ 8억 3,500</span>
+                                                        <span class="c_type">R15</span>
+                                                    </li>
+                                                    <li class="dp_f dp_c">
+                                                        <span class="badge badge_default">월세</span>
+                
+                                                    </li>
+                                                    <li class="dp_f dp_c">
+                                                        <span class="badge badge_default">투자</span>
+                
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="listImgWrap">
+                                                <!--배경 이미지-->
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="listBox">
+                                        <a class="dp_sb dp_wrap" href="" title="">
+                                            <div class="listText">
+                                                <div class="listText_tit dp_f dp_c dp_wrap">
+                                                    <p class="redCir f14 bold dp_f dp_c dp_cc">신</p>
+                                                    <p class="tit_item f14 bold2">트레비앙</p>
+                                                    <p class="f12 c_gry">서울 마포구 연남동 487-8</p>
+                                                </div>
+                                                <ul class="info_price">
+                                                    <li class="dp_f dp_c">
+                                                        <span class="badge badge_pink">매매</span>
+                                                        <span class="ss_price dp_f dp_c f12 bold2">4억 3,000 ~ 8억 3,500</span>
+                                                        <span class="c_type">R15</span>
+                                                    </li>
+                                                    <li class="dp_f dp_c">
+                                                        <span class="badge badge_default">전세</span>
+                
+                                                    </li>
+                                                    <li class="dp_f dp_c">
+                                                        <span class="badge badge_default">월세</span>
+                
+                                                    </li>
+                                                    <li class="dp_f dp_c">
+                                                        <span class="badge badge_blue">투자</span>
+                                                        <span class="ss_price dp_f dp_c f12 bold2">4억 3,000 ~ 8억 3,500</span>
+                                                        <span class="c_type">R15</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="listImgWrap">
+                                                <!--배경 이미지-->
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="listBox">
+                                        <a class="dp_sb dp_wrap" href="" title="">
+                                            <div class="listText">
+                                                <div class="listText_tit dp_f dp_c dp_wrap">
+                                                    <p class="redCir f14 bold dp_f dp_c dp_cc">신</p>
+                                                    <p class="tit_item f14 bold2">트레비앙</p>
+                                                    <p class="f12 c_gry">서울 마포구 연남동 487-8</p>
+                                                </div>
+                                                <ul class="info_price">
+                                                    <li class="dp_f dp_c">
+                                                        <span class="badge badge_pink">매매</span>
+                                                        <span class="ss_price dp_f dp_c f12 bold2">4억 3,000 ~ 8억 3,500</span>
+                                                        <span class="c_type">R15</span>
+                                                    </li>
+                                                    <li class="dp_f dp_c">
+                                                        <span class="badge badge_default">전세</span>
+                
+                                                    </li>
+                                                    <li class="dp_f dp_c">
+                                                        <span class="badge badge_default">월세</span>
+                
+                                                    </li>
+                                                    <li class="dp_f dp_c">
+                                                        <span class="badge badge_default">투자</span>
+                
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="listImgWrap">
+                                                <!--배경 이미지-->
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="listBox">
+                                        <a class="dp_sb dp_wrap" href="" title="">
+                                            <div class="listText">
+                                                <div class="listText_tit dp_f dp_c dp_wrap">
+                                                    <p class="redCir f14 bold dp_f dp_c dp_cc">신</p>
+                                                    <p class="tit_item f14 bold2">트레비앙</p>
+                                                    <p class="f12 c_gry">서울 마포구 연남동 487-8</p>
+                                                </div>
+                                                <ul class="info_price">
+                                                    <li class="dp_f dp_c">
+                                                        <span class="badge badge_pink">매매</span>
+                                                        <span class="ss_price dp_f dp_c f12 bold2">4억 3,000 ~ 8억 3,500</span>
+                                                        <span class="c_type">R15</span>
+                                                    </li>
+                                                    <li class="dp_f dp_c">
+                                                        <span class="badge badge_default">전세</span>
+                
+                                                    </li>
+                                                    <li class="dp_f dp_c">
+                                                        <span class="badge badge_green">월세</span>
+                                                        <span class="ss_price dp_f dp_c f12 bold2">4억 3,000 ~ 8억 3,500</span>
+                                                        <span class="c_type">R15</span>
+                                                    </li>
+                                                    <li class="dp_f dp_c">
+                                                        <span class="badge badge_default">투자</span>
+                
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="listImgWrap">
+                                                <!--배경 이미지-->
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="listBox">
+                                        <a class="dp_sb dp_wrap" href="" title="">
+                                            <div class="listText">
+                                                <div class="listText_tit dp_f dp_c dp_wrap">
+                                                    <p class="redCir f14 bold dp_f dp_c dp_cc">신</p>
+                                                    <p class="tit_item f14 bold2">트레비앙</p>
+                                                    <p class="f12 c_gry">서울 마포구 연남동 487-8</p>
+                                                </div>
+                                                <ul class="info_price">
+                                                    <li class="dp_f dp_c">
+                                                        <span class="badge badge_pink">매매</span>
+                                                        <span class="ss_price dp_f dp_c f12 bold2">4억 3,000 ~ 8억 3,500</span>
+                                                        <span class="c_type">R15</span>
+                                                    </li>
+                                                    <li class="dp_f dp_c">
+                                                        <span class="badge badge_yellow">전세</span>
+                                                        <span class="ss_price dp_f dp_c f12 bold2">4억 3,000 ~ 8억 3,500</span>
+                                                        <span class="c_type">R15</span>
+                                                    </li>
+                                                    <li class="dp_f dp_c">
+                                                        <span class="badge badge_default">월세</span>
+                
+                                                    </li>
+                                                    <li class="dp_f dp_c">
+                                                        <span class="badge badge_default">투자</span>
+                
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="listImgWrap">
+                                                <!--배경 이미지-->
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tabCont">
+                                <div class="listWrap">
+                                    <div class="listBox">
+                                        <a class="dp_sb dp_wrap" href="" title="">
+                                            <div class="listText">
+                                                <div class="listText_tit dp_f dp_c dp_wrap">
+                                                    <p class="redCir f14 bold dp_f dp_c dp_cc">신</p>
+                                                    <p class="tit_item f14 bold2">트레비앙</p>
+                                                    <p class="f12 c_gry">서울 마포구 연남동 487-8</p>
+                                                </div>
+                                                <ul class="info_price">
+                                                    <li class="dp_f dp_c">
+                                                        <span class="badge badge_pink">매매</span>
+                                                        <span class="ss_price dp_f dp_c f12 bold2">4억 3,000 ~ 8억 3,500</span>
+                                                        <span class="c_type">R15</span>
+                                                    </li>
+                                                    <li class="dp_f dp_c">
+                                                        <span class="badge badge_default">전세</span>
+                
+                                                    </li>
+                                                    <li class="dp_f dp_c">
+                                                        <span class="badge badge_default">월세</span>
+                        
+                                                    </li>
+                                                    <li class="dp_f dp_c">
+                                                        <span class="badge badge_default">투자</span>
+                
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="listImgWrap">
+                                                <!--배경 이미지-->
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="listBox">
+                                        <a class="dp_sb dp_wrap" href="" title="">
+                                            <div class="listText">
+                                                <div class="listText_tit dp_f dp_c dp_wrap">
+                                                    <p class="redCir f14 bold dp_f dp_c dp_cc">신</p>
+                                                    <p class="tit_item f14 bold2">트레비앙</p>
+                                                    <p class="f12 c_gry">서울 마포구 연남동 487-8</p>
+                                                </div>
+                                                <ul class="info_price">
+                                                    <li class="dp_f dp_c">
+                                                        <span class="badge badge_pink">매매</span>
+                                                        <span class="ss_price dp_f dp_c f12 bold2">4억 3,000 ~ 8억 3,500</span>
+                                                        <span class="c_type">R15</span>
+                                                    </li>
+                                                    <li class="dp_f dp_c">
+                                                        <span class="badge badge_default">전세</span>
+                                                        <span class="ss_price dp_f dp_c f12 bold2">4억 3,000 ~ 8억 3,500</span>
+                                                        <span class="c_type">R15</span>
+                                                    </li>
+                                                    <li class="dp_f dp_c">
+                                                        <span class="badge badge_default">월세</span>
+                
+                                                    </li>
+                                                    <li class="dp_f dp_c">
+                                                        <span class="badge badge_default">투자</span>
+                
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="listImgWrap">
+                                                <!--배경 이미지-->
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tabCont">
+                                <div class="listWrap">
+                                    <div class="listBox">
+                                        <a class="dp_sb dp_wrap" href="" title="">
+                                            <div class="listText">
+                                                <div class="listText_tit dp_f dp_c dp_wrap">
+                                                    <p class="redCir f14 bold dp_f dp_c dp_cc">신</p>
+                                                    <p class="tit_item f14 bold2">트레비앙</p>
+                                                    <p class="f12 c_gry">서울 마포구 연남동 487-8</p>
+                                                </div>
+                                                <ul class="info_price">
+                                                    <li class="dp_f dp_c">
+                                                        <span class="badge badge_pink">매매</span>
+                                                        <span class="ss_price dp_f dp_c f12 bold2">4억 3,000 ~ 8억 3,500</span>
+                                                        <span class="c_type">R15</span>
+                                                    </li>
+                                                    <li class="dp_f dp_c">
+                                                        <span class="badge badge_default">전세</span>
+                
+                                                    </li>
+                                                    <li class="dp_f dp_c">
+                                                        <span class="badge badge_default">월세</span>
+                        
+                                                    </li>
+                                                    <li class="dp_f dp_c">
+                                                        <span class="badge badge_default">투자</span>
+                
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="listImgWrap">
+                                                <!--배경 이미지-->
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tabCont">
+                                <div class="listWrap">
+                                    <div class="listBox">
+                                        <a class="dp_sb dp_wrap" href="" title="">
+                                            <div class="listText">
+                                                <div class="listText_tit dp_f dp_c dp_wrap">
+                                                    <p class="redCir f14 bold dp_f dp_c dp_cc">신</p>
+                                                    <p class="tit_item f14 bold2">트레비앙</p>
+                                                    <p class="f12 c_gry">서울 마포구 연남동 487-8</p>
+                                                </div>
+                                                <ul class="info_price">
+                                                    <li class="dp_f dp_c">
+                                                        <span class="badge badge_pink">매매</span>
+                                                        <span class="ss_price dp_f dp_c f12 bold2">4억 3,000 ~ 8억 3,500</span>
+                                                        <span class="c_type">R15</span>
+                                                    </li>
+                                                    <li class="dp_f dp_c">
+                                                        <span class="badge badge_default">전세</span>
+                
+                                                    </li>
+                                                    <li class="dp_f dp_c">
+                                                        <span class="badge badge_default">월세</span>
+                        
+                                                    </li>
+                                                    <li class="dp_f dp_c">
+                                                        <span class="badge badge_default">투자</span>
+                
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="listImgWrap">
+                                                <!--배경 이미지-->
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="listBox">
+                                        <a class="dp_sb dp_wrap" href="" title="">
+                                            <div class="listText">
+                                                <div class="listText_tit dp_f dp_c dp_wrap">
+                                                    <p class="redCir f14 bold dp_f dp_c dp_cc">신</p>
+                                                    <p class="tit_item f14 bold2">트레비앙</p>
+                                                    <p class="f12 c_gry">서울 마포구 연남동 487-8</p>
+                                                </div>
+                                                <ul class="info_price">
+                                                    <li class="dp_f dp_c">
+                                                        <span class="badge badge_pink">매매</span>
+                                                        <span class="ss_price dp_f dp_c f12 bold2">4억 3,000 ~ 8억 3,500</span>
+                                                        <span class="c_type">R15</span>
+                                                    </li>
+                                                    <li class="dp_f dp_c">
+                                                        <span class="badge badge_default">전세</span>
+                                                        <span class="ss_price dp_f dp_c f12 bold2">4억 3,000 ~ 8억 3,500</span>
+                                                        <span class="c_type">R15</span>
+                                                    </li>
+                                                    <li class="dp_f dp_c">
+                                                        <span class="badge badge_default">월세</span>
+                
+                                                    </li>
+                                                    <li class="dp_f dp_c">
+                                                        <span class="badge badge_default">투자</span>
+                
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="listImgWrap">
+                                                <!--배경 이미지-->
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <script>
+                    //list페이지 tab
+                    $(".filterTop .tabBtn > li").on("click",function(event){
+                
+                        event.preventDefault();
+                
+                        let tabNumber = $(this).index();
+                
+                        $(".filterTop .tabBtn > li").removeClass("on");
+                        $(this).addClass("on");
+                
+                        $(".listtabContWrap .tabCont").hide();;
+                        $(".listtabContWrap .tabCont").eq(tabNumber).show();
+                
+                    });
+                </script>
+            </div>
+            
+            <script>
+                var flag02 = true;
+                $(".leftBox .m_left_close_btn").click(function(event){
+                    event.preventDefault();
+                    if(flag02){
+                        $(".leftBox").css({"left":"0","z-index":"45"});
+                        $(this).addClass("on");
+
+                        flag02= false;
+                    } else {
+                        $(".leftBox").css({"left":"-281px","z-index":"30"});
+                        $(this).removeClass("on");
+
+                        flag02= true;
+                    }
+                    
+                });
+                //일반 게시판 화면 나타남
+                $(".gnb_menu li:nth-child(5) a").click(function(event){
+
+                    event.preventDefault();
+
+                    $(".board_tbl").show();
+                    
+                });
+                //일반 게시판 화면 사라짐
+                $(".board_tbl .btn_close").click(function(event){
+
+                    event.preventDefault();
+
+                    $(".board_tbl").hide();
+                });
+                //filter페이지 나타남
+                $(".searchBar .filterBtn").click(function(event){
+
+                    event.preventDefault();
+
+                    $(".filterMenu").show();
+                    
+                });
+                //filter페이지 사라짐
+                $(".filterMenu .btn_close").click(function(event){
+
+                    event.preventDefault();
+
+                    $(".filterMenu").hide();
+                });
+                //list페이지 나타남
+                var flag = true;
+                $(".searchBarWrap .searchMenuBtn").click(function(event){
+
+                    event.preventDefault();
+                    
+                    if(flag){
+                        $(".map_search").addClass("active");
+
+                        flag= false;
+                    } else {
+                        $(".map_search").removeClass("active");
+
+                        flag= true;
+                    }
+                });
+                //view1페이지 나타남
+                $(".detailWrap .listWrap .listBox a ").click(function(event){
+
+                    event.preventDefault();
+
+                    $(".view1wrap").show();
+                    $('.view1ImgSlick').slick('slickGoTo', 0); //탭클릭시 slick의 순서를 0번째부터 나오게
+                    $('.view1ImgSlick').slick('setPosition'); //slick의 위치를 수동으로 새로 고쳐줌
+                });
+
+                //view2페이지 나타남
+                $(".view1wrap .listWrap .listBox").click(function(event){
+
+                    event.preventDefault();
+
+                    $(".view2wrap").show();
+                    $('.view2ImgSlick').slick('slickGoTo', 0); //탭클릭시 slick의 순서를 0번째부터 나오게
+                    $('.view2ImgSlick').slick('setPosition'); //slick의 위치를 수동으로 새로 고쳐줌
+                });
+
+                //view3페이지 나타남
+                $(".view1wrap .row_floor .item_ho").click(function(event){
+
+                    event.preventDefault();
+
+                    $(".view3wrap").show();
+                    $('.view3ImgSlick').slick('slickGoTo', 0); //탭클릭시 slick의 순서를 0번째부터 나오게
+                    $('.view3ImgSlick').slick('setPosition'); //slick의 위치를 수동으로 새로 고쳐줌
+                });
+            </script>
+
+
+
+
+            <!-- * 카카오맵 - 지도퍼가기 -->
+            <!-- 1. 지도 노드 -->
+            <div id="daumRoughmapContainer1665708674585" class="root_daum_roughmap root_daum_roughmap_landing" style="width: 100%; height: 100vh !important;"></div>
+
+            <!--
+                2. 설치 스크립트
+                * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+            -->
+            <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+            <!-- 3. 실행 스크립트 -->
+            <script charset="UTF-8">
+                new daum.roughmap.Lander({
+                    "timestamp" : "1665708674585",
+                    "key" : "2c2a6",
+                    "mapWidth" : "auto",
+                    "mapHeight" : "auto"
+                }).render();
+            </script>
+        </div>
+    </div>
+
+    <script>
+        //$(".leftBox").addClass("open");
+        $(".obtn").click(function(){
+            $(".leftBox").addClass("open");
+            $(".bgbgbg").addClass("bgbgbg_a");
+
+        })
+        $(".close").click(function(){
+            $(".leftBox").removeClass("open");
+            $(".bgbgbg").removeClass("bgbgbg_a");
+
+        })
+    </script>
+</body>
+</html>
