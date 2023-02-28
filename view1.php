@@ -1,19 +1,7 @@
 <div class="view1wrap">
-    <div class="viewTop dp_sb dp_c">
-		<div class="gobackBtn dp_f dp_c">
-            <span class="lnr lnr-chevron-left"></span>
-        </div>
-        <div class="centerTit">
-            <div class="dp_f dp_c dp_cc">
-                <span class="redTitCir dp_f dp_c dp_cc">신</span>
-                <span class="gryAptNm">트레비앙</span>
-            </div>
-            <p class="smallAdrGry">서울 마포구 연남동 487-8</p>
-        </div>
-        <div class="likeBtn">
-            <!--별-->
-        </div>
-	</div>
+    <?
+        include'viewTop.php'
+    ?>
     <div class="inner_filter02">
         <div class="view1Visual po_r">
             <div class="view1ImgSlick">
@@ -770,9 +758,9 @@
         </div>
         
     </div>
-    <div id="single_btn" class="dp_f dp_cc">
-        <a class="inquireBtn dp_f dp_cc dp_c" href="" title="문의하기">문의하기</a>
-    </div>
+    <?
+        include'view_inquireBtn.php'
+    ?>
 </div>
 <script>
     //toggle 내용
