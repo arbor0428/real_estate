@@ -222,10 +222,38 @@ $subunArr['new'] = 'active';
 											</li>
 										</ul>
 									</div>
+									<div class="fileupload_field_wrap">
+										<div class="dp_sb fileupload_field_top">
+											<a class="upload_btn dp_f dp_c dp_cc bold2" href="" title="업로드">업로드</a>
+											<p class="amt_status">
+												<span class="bold2">0</span>/
+												<span>50</span>
+											</p>
+										</div>
+										<p class="upload_caut">ⓘ PNG, JPG, JPEG 형식으로 최대 50개까지 등록가능</p>
+										<div class="fileupload_field dp_f dp_c dp_cc">
+											파일을 여기에 놓아주세요.
+										</div>
+									</div>
+
 
 									<p class="zipro_table_tit dp_f dp_c">
 										썸네일 이미지
 									</p>
+									<div class="fileupload_field_wrap">
+										<div class="dp_sb fileupload_field_top">
+											<a class="upload_btn dp_f dp_c dp_cc bold2" href="" title="업로드">업로드</a>
+											<p class="amt_status">
+												<span class="bold2">0</span>/
+												<span>50</span>
+											</p>
+										</div>
+										<p class="upload_caut">ⓘ PNG, JPG, JPEG 형식으로 최대 50개까지 등록가능</p>
+										<div class="fileupload_field dp_f dp_c dp_cc">
+											파일을 여기에 놓아주세요.
+										</div>
+									</div>
+
 
 									<div class="zipro_table_tit dp_f dp_c">
 										<span>속지 이미지</span>
@@ -240,6 +268,21 @@ $subunArr['new'] = 'active';
 											</li>
 										</ul>
 									</div>
+
+									<div class="fileupload_field_wrap" style="margin-bottom: 20px;">
+										<div class="dp_sb fileupload_field_top">
+											<a class="upload_btn dp_f dp_c dp_cc bold2" href="" title="업로드">업로드</a>
+											<p class="amt_status">
+												<span class="bold2">0</span>/
+												<span>50</span>
+											</p>
+										</div>
+										<p class="upload_caut">ⓘ PNG, JPG, JPEG 형식으로 최대 50개까지 등록가능</p>
+										<div class="fileupload_field dp_f dp_c dp_cc">
+											파일을 여기에 놓아주세요.
+										</div>
+									</div>
+
 									<table class="zipro_tbl">
 										<tbody>
 											<tr>
@@ -381,6 +424,19 @@ $subunArr['new'] = 'active';
 												<label for="house_chk2_30">공사중</label>
 											</li>
 										</ul>
+									</div>
+									<div class="fileupload_field_wrap">
+										<div class="dp_sb fileupload_field_top">
+											<a class="upload_btn dp_f dp_c dp_cc bold2" href="" title="업로드">업로드</a>
+											<p class="amt_status">
+												<span class="bold2">0</span>/
+												<span>50</span>
+											</p>
+										</div>
+										<p class="upload_caut">ⓘ PNG, JPG, JPEG 형식으로 최대 50개까지 등록가능</p>
+										<div class="fileupload_field dp_f dp_c dp_cc">
+											파일을 여기에 놓아주세요.
+										</div>
 									</div>
 
 

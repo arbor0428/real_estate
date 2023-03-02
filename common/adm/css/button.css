@@ -1001,6 +1001,12 @@ select {
 	box-sizing:border-box;
 	font-size: 14px;
 }
+.zipro_tbl.half__tbl th {
+	width: 15%;
+}
+.zipro_tbl.half__tbl td {
+	width: 35%;
+}
 .zipro_tbl td {
 	padding: 5px 15px;
 	border-right: 1px solid #ccc;
@@ -1879,4 +1885,32 @@ border-radius:3px
 	color: #ed164b;
 	padding: 3px 5px;
 	background-color:#ffeef2; 
+}
+.fileupload_field_wrap {
+	border: 1px solid #ccc;
+	font-size: 14px;
+}
+.fileupload_field_wrap .upload_btn {
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	padding: 3px 10px;
+}
+.fileupload_field_wrap .fileupload_field_top {
+	padding: 10px;
+}
+.fileupload_field_wrap .upload_caut {
+	margin-bottom: 5px;
+	padding: 0 10px;
+	color: #818181;
+}
+.fileupload_field_wrap .fileupload_field {
+	border-top: 1px solid #ccc;
+	padding: 50px 0;
+	color: #818181;
+}
+
+.mem_status {
+	padding: 3px;
+    border-radius: 20px;
+    color: #fff;
 }

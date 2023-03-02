@@ -38,14 +38,14 @@
 		</div>
 	</li>
 
-	<li class="nav-item">
+	<li class="nav-item <?= $sideArr[2] ?>"">
 		<a class="nav-link collapsed" href="javascript:void(0)" data-toggle="collapse" data-target="#subList2" aria-expanded="true" aria-controls="subList2">
 			<span>회원관리</span>
 		</a>
-		<div id="subList2" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+		<div id="subList2" class="collapse <?= $showArr[2] ?>" aria-labelledby="headingPages" data-parent="#accordionSidebar">
 			<div class="bg-white py-2 collapse-inner rounded">
-				<a class="collapse-item" href="">회원목록</a>
-				<a class="collapse-item" href="">회원제보</a>
+				<a class="collapse-item <?= $subArr['managemember'] ?>" href="/adm/members/managemember">회원목록</a>
+				<a class="collapse-item <?= $subArr['report'] ?>" href="/adm/members/report">회원제보</a>
 			</div>
 		</div>
 	</li>

@@ -431,18 +431,18 @@ $subunArr['old'] = 'active';
 												</td>
 											</tr>
 											<tr>
-												<td colspan="2">
-													<div class="">
-														<div class="dp_sb">
-															<a href="" title="업로드">업로드</a>
-															<p>
+												<td colspan="2" style="border-left: 1px solid #ccc; padding: 0;">
+													<div class="fileupload_field_wrap" style="border: none;">
+														<div class="dp_sb fileupload_field_top">
+															<a class="upload_btn dp_f dp_c dp_cc bold2" href="" title="업로드">업로드</a>
+															<p class="amt_status">
 																<span class="bold2">0</span>/
 																<span>50</span>
 															</p>
 														</div>
-														<p>ⓘ PNG, JPG, JPEG 형식으로 최대 50개까지 등록가능</p>
-														<div class="">
-															
+														<p class="upload_caut">ⓘ PNG, JPG, JPEG 형식으로 최대 50개까지 등록가능</p>
+														<div class="fileupload_field dp_f dp_c dp_cc">
+															파일을 여기에 놓아주세요.
 														</div>
 													</div>
 												</td>
