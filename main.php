@@ -98,12 +98,29 @@
 						}
 						
 					});
+					//마이페이지 화면 나타남
+					$(".gnb_menu li:nth-child(3) a").click(function(event){
+
+					event.preventDefault();
+
+					$(".mypageWrap").show();
+					$(".board_tbl").hide();
+
+					});
+					//마이페이지 화면 사라짐
+					$(".mypageWrap .btn_close").click(function(event){
+
+						event.preventDefault();
+
+						$(".mypageWrap").hide();
+					});
 					//일반 게시판 화면 나타남
 					$(".gnb_menu li:nth-child(5) a").click(function(event){
 
 						event.preventDefault();
 
 						$(".board_tbl").show();
+						$(".mypageWrap").hide();
 						
 					});
 					//일반 게시판 화면 사라짐

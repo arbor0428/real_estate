@@ -1204,6 +1204,87 @@
 	background-size: inherit;
 	background-image: url("../images/btn_close.png");
 }
+.mypage_editWrap {
+	display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    min-height: 100vh;
+    max-width: 530px;
+    border: 1px solid #e1e1e1;
+    background-color: #fff;
+    z-index: 121;
+}
+.mypage_editWrap .btn_close {
+	position: absolute;
+    top: 14px;
+	width: 36px;
+	height: 36px;
+	box-sizing: border-box;
+    right: -36px;
+    background-color: #fff;
+    border: 1px solid #e1e1e1;
+    cursor: pointer;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: inherit;
+	background-image: url("../images/btn_close.png");
+}
+.mypage_withdrawWrap {
+	display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    min-height: 100vh;
+    max-width: 530px;
+    border: 1px solid #e1e1e1;
+    background-color: #fff;
+    z-index: 121;
+}
+.mypage_withdrawWrap .btn_close {
+	position: absolute;
+    top: 14px;
+	width: 36px;
+	height: 36px;
+	box-sizing: border-box;
+    right: -36px;
+    background-color: #fff;
+    border: 1px solid #e1e1e1;
+    cursor: pointer;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: inherit;
+	background-image: url("../images/btn_close.png");
+}
+.mypageWrap {
+	display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    min-height: 100vh;
+    max-width: 530px;
+    border: 1px solid #e1e1e1;
+    background-color: #fff;
+    z-index: 120;
+}
+.mypageWrap .btn_close {
+	position: absolute;
+    top: 14px;
+	width: 36px;
+	height: 36px;
+	box-sizing: border-box;
+    right: -36px;
+    background-color: #fff;
+    border: 1px solid #e1e1e1;
+    cursor: pointer;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: inherit;
+	background-image: url("../images/btn_close.png");
+}
 .inner_board {
 	overflow: hidden;
     overflow-y: auto;
@@ -1212,7 +1293,7 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
-.board_tbl .board_tit {
+.boardTop .board_tit {
 	font-size: 1.375rem;
 	color: #fff;
 }
@@ -1267,3 +1348,143 @@
 	font-weight: 700;
 }
 /*회원가입*/
+
+/*마이페이지*/
+.mypage_list_wrap {
+	padding: 20px;
+}
+.mypage_list_wrap .mypage_box {
+	box-sizing: border-box;
+	border:1px solid #e1e1e1;
+	border-radius:16px;
+	box-shadow:0 0 5px 0 rgba(0, 0, 0, .2);
+	overflow: hidden;
+	min-height: 150px;
+}
+.mypage_list_wrap .mypage_box .mypage_box_list li {
+	padding: 10px 0;
+	margin: 0 20px;
+	border-bottom:1px solid #e1e1e1;
+	font-size: 14px;
+}
+.mypage_list_wrap .mypage_box .mypage_box_list li:last-child {
+	border-bottom: none;
+}
+.mypage_list_wrap .twobtn_wrap {
+	border-top:1px solid #e1e1e1;
+}
+.mypage_list_wrap .twobtn_wrap a {
+	width: 50%;
+	height: 45px;
+	background-color: #f1f1f1;
+	font-size: 14px;
+	color: #888;
+	font-weight: 500;
+	transition: all 0.3s;
+}
+.mypage_list_wrap .twobtn_wrap a:hover {
+	background-color: #ed164b;
+	color: #fff;
+}
+.mypage_list_wrap .twobtn_wrap a:first-child {
+	border-right: 1px solid #e1e1e1;
+}
+.mypage_list_wrap .list_tit {
+	padding: 10px 5px;
+	font-weight: 700;
+	font-size: 18px;
+}
+.mypage_list_wrap .list_tit .list_txt {
+	margin-left: 10px;
+}
+.mypage_list_wrap .usingAmt {
+	color: #888;
+	font-size: 13px;
+	font-weight: 500;
+}
+.switch-button {
+	position: relative;
+	display: inline-block;
+	width: 50px;
+	height: 26px;
+}
+
+.switch-button input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+.onoff-switch {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	border-radius:20px;
+	background-color: #ccc;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+
+.onoff-switch:before {
+	position: absolute;
+	content: "";
+	height: 18px;
+	width: 18px;
+	left: 4px;
+	bottom: 4px;
+	background-color: #fff;
+	-webkit-transition: .5s;
+	transition: .4s;
+	border-radius:20px;
+}
+
+.switch-button input:checked + .onoff-switch {
+	background-color: #ed164b;
+}
+
+.switch-button input:checked + .onoff-switch:before {
+	-webkit-transform: translateX(23px);
+	-ms-transform: translateX(23px);
+	transform: translateX(23px);
+}
+.mypage_box_list li input {
+	padding: 5px 10px;
+	border-radius: 4px;
+	border: 1px solid #d5d5d5;
+}
+.edit_twobtn_wrap {
+	margin: 40px 0;
+}
+.edit_btn {
+	margin: 50px 20px;
+	border: 1px solid #d20d3d;
+    background-color: #ed164b;
+    color: #fff;
+    height: 50px;
+    border-radius: 6px;
+    width: 480px;
+}
+.mypage_withdrawWrap .list_detail {
+	padding: 0 10px;
+	margin-bottom: 20px;
+} 
+.mypage_box_list li .row_det .inputWrap:first-child {
+	margin-bottom: 10px;
+}
+.mypage_box_list li .row_det .inputWrap a {
+	width: 100px;
+	height: 31px;
+	border-radius: 4px;
+	margin-left: 10px;
+}
+.mypage_withdraw_btn_wrap a {
+	margin: 20px 10px;
+	width: 150px;
+	height: 40px;
+	border-radius: 4px;
+}
+/*마이페이지*/
+

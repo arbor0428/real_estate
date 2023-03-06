@@ -29,7 +29,7 @@
                     </tr>
                 </thead>
                 <tbody>
-<!--                     <tr>
+                     <!--                     <tr>
                         <td colspan="3" class="txt-c">등록된 게시물이 없습니다</td>
                     </tr> -->
                     <tr>

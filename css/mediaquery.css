@@ -23,6 +23,9 @@
     .searchBar .inputWrap {width: 60%;}
     .filterMenu .btn_close {right: 20px; z-index: 99;}
     .board_tbl .btn_close {right: 20px; z-index: 99; background-color: transparent; border: 1px solid transparent;}
+    .mypageWrap .btn_close {right: 20px; z-index: 99; background-color: transparent; border: 1px solid transparent;}
+    .mypage_editWrap .btn_close {right: 20px; z-index: 99; background-color: transparent; border: 1px solid transparent;}
+    .mypage_withdrawWrap .btn_close {right: 20px; z-index: 99; background-color: transparent; border: 1px solid transparent;}
     .filterMenu .inner_filter .row {display: block;}
     .filterMenu .inner_filter .row .row_det {width: 100%; margin-top: 20px;}
     .area_status {padding: 10px 5px;}
@@ -33,5 +36,14 @@
     .joinWrap .bg-gradient-light {height: auto; background-image:url(); background-color: #fff;}
     .joinWrap .step_wrap {position: static; margin: 70px auto 0; transform: translateX(0);}
     .board_tbl .btn_close {background-image: url("../images/btn_close_wht.png");}
+    .mypageWrap .btn_close {background-image: url("../images/btn_close_wht.png");}
+    .mypage_editWrap .btn_close {background-image: url("../images/btn_close_wht.png");}
+    .mypage_withdrawWrap .btn_close {background-image: url("../images/btn_close_wht.png");}
 	.table_wrap table tbody td.ellipsis {max-width: 238px;}
+    .mypage_box_list li .row_tit {
+        width: 30%;
+    }
+    .mypage_box_list li .row_det {
+        width: 70%;
+    }
 }

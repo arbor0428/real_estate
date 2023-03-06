@@ -66,15 +66,15 @@ $subArr['managemember'] = 'active';
 												<td>
                                                     <ul class="checkWrap dp_f dp_wrap">
 														<li>
-															<input type="radio" name="radio10_1" id="member_chk4_4">
+															<input type="radio" name="radio9_2" id="member_chk4_4">
 															<label for="member_chk4_4">일반회원</label>
 														</li>
 														<li>
-															<input type="radio" name="radio10_1" id="member_chk4_5">
+															<input type="radio" name="radio9_2" id="member_chk4_5">
 															<label for="member_chk4_5">분양회원</label>
 														</li>
                                                         <li>
-															<input type="radio" name="radio10_1" id="member_chk4_6">
+															<input type="radio" name="radio9_2" id="member_chk4_6">
 															<label for="member_chk4_6">집프로</label>
 														</li>
 													</ul>
@@ -195,19 +195,85 @@ $subArr['managemember'] = 'active';
                                             <tr>
                                                 <th>명함</th>
 												<td colspan="3" style="width: 85%;">
-                                                    
+                                                    <div class="dp_f dp_c dp_wrap">
+														<div class="img_sum">
+															<img src="" alt="">
+															<div class="img_sum_tit dp_f dp_c">
+																<span>123koddggggggg</span>
+																<span>.jpg</span>
+															</div>
+														</div>
+														<div class="img_sum">
+															<img src="" alt="">
+															<div class="img_sum_tit dp_f dp_c">
+																<span>123koddggggggg</span>
+																<span>.jpg</span>
+															</div>
+														</div>
+													</div>
 												</td>
 											</tr>
                                             <tr>
                                                 <th>사업자등록증</th>
 												<td colspan="3" style="width: 85%;">
-                                                    
+													<div class="dp_f dp_c dp_wrap">
+														<div class="img_sum">
+															<img src="" alt="">
+															<div class="img_sum_tit dp_f dp_c">
+																<span>123koddggggggg</span>
+																<span>.jpg</span>
+															</div>
+														</div>
+														<div class="img_sum">
+															<img src="" alt="">
+															<div class="img_sum_tit dp_f dp_c">
+																<span>123koddggggggg</span>
+																<span>.jpg</span>
+															</div>
+														</div>
+													</div>
 												</td>
 											</tr>
 											<tr>
                                                 <th>메모</th>
 												<td colspan="3" style="width: 85%;">
 													<textarea placeholder="직원 전용 활용 메모 칸" style="width: 100%; resize:none; height: 200px; box-sizing:border-box;"></textarea>
+												</td>
+											</tr>
+											<tr>
+                                                <th>권한 관리</th>
+												<td>
+													<ul class="checkWrap dp_f dp_wrap">
+														<li>
+															<input type="radio" name="radio9_3" id="member_chk4_7">
+															<label for="member_chk4_7">경고</label>
+														</li>
+														<li>
+															<input type="radio" name="radio9_3" id="member_chk4_8">
+															<label for="member_chk4_8">1차</label>
+														</li>
+                                                        <li>
+															<input type="radio" name="radio9_3" id="member_chk4_9">
+															<label for="member_chk4_9">2차</label>
+														</li>
+													</ul>
+												</td>
+												<th>권한 정보</th>
+												<td>
+													<ul class="checkWrap dp_f dp_wrap">
+														<li>
+															<input type="radio" name="radio9_4" id="member_chk4_10">
+															<label for="member_chk4_10">직원 등록</label>
+														</li>
+														<li>
+															<input type="radio" name="radio9_4" id="member_chk4_11">
+															<label for="member_chk4_11">관리자 등록</label>
+														</li>
+                                                        <li>
+															<input type="radio" name="radio9_4" id="member_chk4_12">
+															<label for="member_chk4_12">일반</label>
+														</li>
+													</ul>
 												</td>
 											</tr>
 										</tbody>

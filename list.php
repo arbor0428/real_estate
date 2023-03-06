@@ -1,4 +1,5 @@
 
+<!--필터 검색바-->
 <?
     include'filterMenu.php'
 ?>
@@ -11,11 +12,25 @@
 <?
     include'view1.php'
 ?>
+<!--검색바-->
 <?
     include'search.php'
 ?>
+<!--회원관리-->
 <?
     include'board.php'
+?>
+<!--마이페이지-->
+<?
+    include'mypage.php'
+?>
+<!--마이페이지 회원정보 수정-->
+<?
+    include'mypage_edit.php'
+?>
+<!--회원탈퇴 수정-->
+<?
+    include'mypage_withdraw.php'
 ?>
 
 <div class="detailWrap">

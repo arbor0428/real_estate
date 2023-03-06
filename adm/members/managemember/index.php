@@ -6,6 +6,9 @@ $subArr['managemember'] = 'active';
 ?>
 <style>
     .listTable tr td {cursor: pointer;}
+    .listTable tr:hover {
+        background-color: #ffeff5;
+    }
 </style>
 <div id="page-top">
 	<!-- Page Wrapper -->
@@ -29,6 +32,41 @@ $subArr['managemember'] = 'active';
 							<h4 class="font-weight-bold text-primary" style="margin-bottom: 20px;">회원 관리</h4>
 							<div class="card shadow mb-4">
 								<div class="card-body">
+                                <div class="search_filter_wrap">
+                                        <div class="search_filter_tit">검색 필터</div>
+                                        <div class="dp_f dp_c dp_wrap" style="padding: 15px;">
+                                            <div class="search_filter_box dp_f dp_c wid30">
+                                                <div class="row_tit bold2">전화번호</div>
+                                                <div class="row_det">
+                                                    <div class="inputWrap">
+                                                        <input type="text">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="search_filter_box dp_f dp_c wid30">
+                                                <div class="row_tit bold2">회원명</div>
+                                                <div class="row_det">
+                                                    <div class="inputWrap">
+                                                        <input type="text">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="search_filter_box dp_f dp_c wid30">
+                                                <div class="row_tit bold2">회사명</div>
+                                                <div class="row_det">
+                                                    <div class="inputWrap">
+                                                        <input type="text">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="dp_f dp_c dp_cc" style="margin: 10px 0;">
+                                            <a class="btn-danger" href="" title="초기화" style="margin: 0 10px; padding: 3px 10px; border-radius: 3px; font-size: 1rem;">초기화</a>
+                                            <a class="badge_Sushi" href="" title="검색" style="margin: 0 10px; padding: 3px 10px; border-radius: 3px; font-size: 1rem;">검색</a>
+                                        </div>
+                                    </div>
+
                                     <div class="dp_sb" style="margin-bottom: 10px;">
                                         <div class="">
                                             총 3건

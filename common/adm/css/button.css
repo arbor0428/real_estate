@@ -1914,3 +1914,65 @@ border-radius:3px
     border-radius: 20px;
     color: #fff;
 }
+.img_sum {
+	position: relative;
+	margin-right: 10px;
+	width: 50px;
+	height: 50px;
+	border: 1px solid #ccc;
+}
+.img_sum .img_sum_tit {
+	position:absolute;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(0,0,0,0.4);
+	color: #fff;
+	text-align: center;
+	font-size: 9px;
+	width: 100%;
+}
+.img_sum .img_sum_tit span:nth-child(1) {
+	width: 60%;
+	display: block;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.search_filter_wrap {
+	padding-bottom: 15px;
+	margin-bottom: 20px;
+	box-sizing:border-box;
+	background-color: #f5f5f5;
+	border-radius: 4px;
+	overflow: hidden;
+}
+.search_filter_wrap .search_filter_box {
+	margin-bottom: 10px;
+}
+.search_filter_wrap .search_filter_box.wid30 {
+	width: 33.333%;
+}
+.search_filter_wrap .search_filter_box.wid25 {
+	width: 25%;
+}
+.search_filter_wrap .search_filter_box .row_tit {
+	width: 30%;
+	font-size: 14px;
+}
+.search_filter_wrap .search_filter_box .row_det {
+	width: 70%;
+}
+.search_filter_wrap .search_filter_box .row_det input {
+	height: 35px;
+    padding: 5px 10px;
+    font-size: 0.875rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+.search_filter_wrap .search_filter_tit {
+	background-color: #454650;
+	color: #fff;
+	padding: 10px 15px;
+	font-size: 18px;
+	font-weight: 700;
+}
